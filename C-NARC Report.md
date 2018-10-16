@@ -42,7 +42,27 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
 ## Methods
 
 ### Experimental Apparatus
-[add schematic and describe process flow]
+The experimental setup was similar to that of the Spring 2016 Contact Chamber subteam. However, C-NARC’s setup did not include the contact chamber and the needle valve. Additionally, four pressure sensors were attached at equal distances on the flocculator. 
+
+![Figure 2](/Images/Set up.png)
+
+CAPTION: Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
+
+The experiment setup shown in Figure 2 models the water flow through a plant on a smaller, lab-sized scale as follows:
+The blue influent line delivers water to the water pump.
+A concentration of clay stock is prepared and mixed.
+The pumps deliver the water and clay mixture to the turbidimeter.
+The turbidimeter measures the influent turbidity of the clay-water mixture.
+The coagulant is added immediately before they clay-water mixture enters the coiled flocculator. The flocculator allows for collisions between clay particles and coagulant nanoparticles.
+The flocculator has four pressure sensors attached at equal distances by push-to-connect fittings to measure the pressure differences across the length of the flocculator. 
+The red effluent line transports wastewater out of the system.
+
+First, water was introduced into the system through the influent line. The flow rate of the water was maintained at a constant rate of 76 rpm by the water pump. The water was then pumped into the inlet of flow accumulator, which is an equipment that allows continuous water flow through the system by reducing fluctuations caused by the pump. It consisted of a bottle with two taps: one for the entry of water and the other for the exit. At the beginning of an experiment, the bottle was filled with water up to just above the two holes. The bottle was then capped to trap the air inside and pressurize itself, thus maintaining the water level at a steady state (Contact Chamber Spring 2018). The water then flowed out of the flow accumulator, after which clay was pumped into the water. 
+A stock solution of clay with the concentration of 2.0g/L was prepared, and the concentration at which it was introduced into the water by the clay pump was determined by the turbidity, measured by the influent turbidimeter.  The speed of the clay pump was varied by the Proportional - Integral - Derivative (PID) control to reach the target turbidity on 100 NTU. 
+A stock solution of PACl coagulant with the concentration of 0.1418g/L was also prepared and introduced into the clay-water mixture, after the clay-water mixture was pumped out of the turbidimeter, at a constant rate of 20 rpm. The flow rate contributions by the coagulant and clay pump were neglected since microbore tubing, which has a negligible flow rate contribution, was used. The water-clay-coagulant mixture was then pumped into the coiled flocculator.
+The coiled flocculator was made of a tubing wound around a cardboard tube. This was the section where the clay molecules collide with coagulant particles to form flocs (Selimgir, M., Lo, R., Matai, K., 2018). Four pressure sensors were attached, at equal distances, to the flocculator. The sensors measured the difference in pressure between the two points where they were attached. Four sensors were used in order to determine how the pressure, and thus, head loss changed along the length of the flocculator. Finally, the water was pumped out of the system through the effluent line. 
+
+
 
 #### Materials
 - Pumps
