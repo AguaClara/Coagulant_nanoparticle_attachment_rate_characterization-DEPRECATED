@@ -42,6 +42,42 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
 ## Methods
 
 ### Experimental Apparatus
+[add schematic and describe process flow]
+
+#### Materials
+- Pumps
+  - Two (2) Masterflex 1.6-100 RPM pumps
+    - Coagulant pump
+    - Clay pump
+  - One (1) Masterflex 10-600 RPM pump
+    - Water pump
+- Turbidimeter
+  - One (1) HF Scientific Inc MicroTOL Turbidimeter 0-1000 NTU
+    - measures influent turbidity after clay additional
+- Flow accumulator
+  - 1 L Nalgene bottle, fitted with two small push-to-connect openings
+- Modified coiled flocculator
+  - Cardboard tube (OD = 8cm, L = 50cm)
+  - Four (4) 1/4" hard tubing (L = 9'9")
+  - Three (3) 1/4" hard tubing (L = 3")
+  - Eight (8) 1/4" push-to-connect t-joints
+  - Eight (8) small cable ties
+  - Four (4) pressure sensors
+- Tubings and Fitting
+  - 1/4" hard tubing
+  - Microbore tubing
+  - Two (2) yellow-blue soft tubing
+  - Size 16 soft tubing
+  - Two (2) 1/4" push-to-connect t-joints
+- Stock solution materials
+  - 6 L tank for clay stock, fitted with a small push-to-connect opening
+  - 1 L Nalgene bottle, fitted with a small push-to-connect opening
+  - Distilled water
+  - Kaolinite Clay
+  - Polyaluminum chloride (PACl)
+
+
+
 
 ### Procedure
 
