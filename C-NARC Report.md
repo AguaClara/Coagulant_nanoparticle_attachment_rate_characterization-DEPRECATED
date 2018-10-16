@@ -122,7 +122,10 @@ Guzman, J., Weber-Shirk, M., O’Connor, C., Pennock, W., Lion, L., & Du, Y., (2
 
 Krishnamoorthysujatha, M., Moraes, J. C., & Escanciano, J., (2016). Rapid Mix Contact Chamber, Fall 2016.
 
+Selimgir, M., Lo, R., Matai, K., (2018). High G Flocculation, Spring 2018.
+
 Tsang, C., Yun, Y., & Delgado, C., (2018). Contact Chamber, Spring 2018.
+
 
 
 ## Manual
