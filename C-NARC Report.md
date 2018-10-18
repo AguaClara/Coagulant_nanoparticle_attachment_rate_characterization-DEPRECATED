@@ -49,13 +49,14 @@ The experimental setup was similar to that of the Spring 2016 Contact Chamber su
 CAPTION: Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
 
 The experiment setup shown in Figure 2 models the water flow through a plant on a smaller, lab-sized scale as follows:
-The blue influent line delivers water to the water pump.
-A concentration of clay stock is prepared and mixed.
-The pumps deliver the water and clay mixture to the turbidimeter.
-The turbidimeter measures the influent turbidity of the clay-water mixture.
-The coagulant is added immediately before they clay-water mixture enters the coiled flocculator. The flocculator allows for collisions between clay particles and coagulant nanoparticles.
-The flocculator has four pressure sensors attached at equal distances by push-to-connect fittings to measure the pressure differences across the length of the flocculator. 
-The red effluent line transports wastewater out of the system.
+1. The blue influent line delivers water to the water pump.
+2. A concentration of clay stock is prepared and introduced into the water.
+3. The pumps deliver the water and clay mixture to the turbidimeter.
+4. The turbidimeter measures the influent turbidity of the clay-water mixture.
+5. The coagulant is added immediately before they clay-water mixture enters the coiled flocculator. The flocculator allows for collisions between clay particles and coagulant nanoparticles.
+6. The flocculator has four pressure sensors attached at equal distances by push-to-connect fittings to measure the pressure differences across the length of the flocculator. 
+7. The red effluent line transports wastewater out of the system.
+
 
 First, water was introduced into the system through the influent line. The flow rate of the water was maintained at a constant rate of 76 rpm by the water pump. The water was then pumped into the inlet of flow accumulator, which is an equipment that allows continuous water flow through the system by reducing fluctuations caused by the pump. It consisted of a bottle with two taps: one for the entry of water and the other for the exit. At the beginning of an experiment, the bottle was filled with water up to just above the two holes. The bottle was then capped to trap the air inside and pressurize itself, thus maintaining the water level at a steady state (Tsang et. al., 2018). The water then flowed out of the flow accumulator, after which clay was pumped into the water. 
 A stock solution of clay with the concentration of 2.0g/L was prepared, and the concentration at which it was introduced into the water by the clay pump was determined by the turbidity, measured by the influent turbidimeter.  The speed of the clay pump was varied by the Proportional - Integral - Derivative (PID) control to reach the target turbidity on 100 NTU. 
