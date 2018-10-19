@@ -46,11 +46,7 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
 
 #### Materials
 - Pumps
-  - Two (2) Masterflex 1.6-100 RPM pumps
-    - Coagulant pump
-    - Clay pump
-  - One (1) Masterflex 10-600 RPM pump
-    - Water pump
+  - Three (3) Masterflex 1.6-100 RPM pumps
 - Turbidimeter
   - One (1) HF Scientific Inc MicroTOL Turbidimeter 0-1000 NTU
     - measures influent turbidity after clay additional
@@ -60,9 +56,9 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
   - Cardboard tube (OD = 8cm, L = 50cm)
   - Four (4) 1/4" hard tubing (L = 9'9")
   - Three (3) 1/4" hard tubing (L = 2")
-  - Eight (5) 1/4" push-to-connect t-joints
+  - Five (5) 1/4" push-to-connect t-joints
   - Eight (8) small cable ties
-  - Four (4) pressure sensors
+  - Four (4) 200 kPa pressure sensors
 - Tubings and Fitting
   - 1/4" hard tubing
   - Microbore tubing
