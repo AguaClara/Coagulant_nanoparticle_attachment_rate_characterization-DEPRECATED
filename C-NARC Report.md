@@ -44,7 +44,7 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
 ### Experimental Apparatus
 The experimental setup was similar to that of the Spring 2016 Contact Chamber subteam. However, C-NARC’s setup did not include the contact chamber and the needle valve. Additionally, four pressure sensors were attached at equal distances on the flocculator. 
 
-![Figure 2](/Images/Set up.png)
+![Figure 2](/Images/setup.png)
 
 CAPTION: Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
 
