@@ -45,8 +45,7 @@ This method returns the overall head loss in the flocculator, but the C-NARC tea
 The experimental setup was similar to that of the Spring 2016 Contact Chamber subteam. However, C-NARC’s setup did not include the contact chamber and the needle valve. Additionally, four pressure sensors were attached at equal distances on the flocculator. 
 
 ![Figure 2](/Images/setup.png)
-
-CAPTION: Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
+Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
 
 The experiment setup shown in Figure 2 models the water flow through a plant on a smaller, lab-sized scale as follows:
 1. The blue influent line delivers water to the water pump.
@@ -93,10 +92,8 @@ The coiled flocculator was made of a tubing wound around a cardboard tube. This 
   - Kaolinite Clay
   - Polyaluminum chloride (PACl)
 
-
-
-
 ### Procedure
+First, all three pumps were powered and the blue influent valve was set to the open position. The water pump was turned on at 100 rpm, and the red effluent valve was set to the open position after a brief delay to prevent backflow of waste water. Water was pumped until the turbidimeter and flocculator were cleared out, after which the water pump was set to 76 rpm. The PID control was set from the OFF to ON state, automatically turning on the mixer. The state was then changed to PID Control, and the clay pump automatically turned on. Once the turbidimeter stabilized at 100 RTU, the pressure sensors were zeroed, and the coagulant pump was manually turned on at 20 rpm. The experiment was left to run for a set number of hours. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed.
 
 ## Results and Analysis
 
@@ -126,3 +123,4 @@ Tsang, C., Yun, Y., & Delgado, C., (2018). Contact Chamber, Spring 2018.
 
 
 ## Manual
+
