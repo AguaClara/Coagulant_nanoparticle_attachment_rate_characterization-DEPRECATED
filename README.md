@@ -4,3 +4,6 @@ The C-NARC subteam is investigating how the rate of attachment of coagulant nano
 ## Current Members
 * Desiree Sausele (djs469)
 * Meera Shah (mps292)
+
+## Fall 2018
+* [Symposium](https://docs.google.com/presentation/d/1IRQYtYWkajkU4LtEYYGQ2ydx1ECn3m4umVHbGsrjSYM/edit?usp=sharing)
