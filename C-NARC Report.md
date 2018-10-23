@@ -48,6 +48,7 @@ Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Inc
 ![Figure 3](/Images/Expt-setup.jpg)
 Figure 3. Image of the bench setup, including the modified coiled flocculator. 
 
+
 The experiment setup shown in Figure 2 and Figure 3 models the water flow through a plant on a smaller, lab-sized scale as follows:
 1. The blue influent line delivers water to the water pump.
 2. A concentration of clay stock is prepared and introduced into the water.
