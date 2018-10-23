@@ -45,7 +45,7 @@ The experimental setup was similar to that of the Spring 2016 Contact Chamber su
 ![Figure 2](/Images/setup.png)
 Figure 2. Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors. 
 
-![Figure 3](/Images/Expt_setup.jpg)
+![Figure 3](/Images/Expt-setup.jpg)
 Figure 3. Image of the bench setup, including the modified coiled flocculator. 
 
 The experiment setup shown in Figure 2 and Figure 3 models the water flow through a plant on a smaller, lab-sized scale as follows:
