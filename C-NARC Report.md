@@ -240,8 +240,8 @@ The flow rate of the clay pump is controlled by the PiD controller to reach the 
 | OFF      |         1     |             0 |
 |ON   | 1  |  1 |
 |Influent Turbidity Target   | Constant | Varied  |
-|P   |  Constant |4.5m   |
-| i  |Constant   | 25m  |
+|P   |  Constant |2.5m   |
+| i  |Constant   | 45m  |
 | D   |  Constant |0   |
 |Influent Turbidimeter ID   |  Constant |  2 |
 |Influent Turbidity   | Variable   | N/A  |
