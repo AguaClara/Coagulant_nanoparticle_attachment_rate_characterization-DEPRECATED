@@ -2,7 +2,7 @@
 #### Desiree Sausele and Meera Shah
 #### September 28, 2018
 
-[CEO: Hi CNARC! This is a great first draft! Some small typo style fixes in a few places, but overall lots of good info here. I will throw my edits in inside square brackets like this comment, feel free to delete them once you've addressed them]
+[EM: Hello! Similar to last report, I will be putting my comments in brackets below the paragraph in which I am referring to. Thx!]
 
 ## Abstract
 Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded by clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
@@ -10,8 +10,12 @@ Attachment of free coagulant nanoparticles to the flocculator wall decreases the
 ## Introduction
 Attachment of coagulant nanoparticles to the wall of the flocculator perpetuates several complications within an AguaClara plant. Firstly, it decreases the efficiency of the flocculator by increasing the rate at which head loss accumulates as water progresses through the plant, and thus, increases the energy demands of the plant. Additionally, the attachment of the nanoparticles to the flocculator walls increases the wastage of coagulant, resulting in higher doses of coagulant being required to compensate for the loss.
 
+[EM: Side note, coagulant is also really expensive! It wastes a lot of money to continuously be buying it.]
+
 Although Fall 2018 is the first semester for C-NARC research, research conducted by the Rapid-Mix Contact Chamber (CC) teams have proven that free coagulant particles attach to the flocculator walls, effectively increasing the head loss through the flocculator by decreasing its diameter [(Tsang et. al., 2018)](https://github.com/AguaClara/contact_chamber/blob/master/ContactChamber_Spring2018.md).
 The C-NARC team was created to quantify the relationships identified by the Rapid Mix CC teams. The team hypothesizes that head loss accumulation in the flocculator is first order with respect to distance along the flocculator and seeks to determine the first order rate constants for the loss of coagulant to the flocculator walls by varying the velocity gradient and turbidity. The loss of coagulant to the flocculator walls is determined by measuring the rate of accumulation of head loss along the length of the flocculator tube. Head loss can be measured by attaching four pressure sensors at equal intervals along the length of the flocculator pipe.
+
+[EM: The sentence that starts with "The team hypothesizes.." is super long. Consider breaking it into two sentences for readability.]
 
 
 ## Literature Review
@@ -49,6 +53,8 @@ Other teams have calculated head loss by measuring the change in pressure before
 ### Experimental Apparatus
 The experimental setup was similar to that of the Spring 2016 Contact Chamber subteam. However, C-NARC’s setup did not include the contact chamber and the needle valve. Additionally, four pressure sensors were attached at equal distances on the flocculator. See the manual for more information on the setup.
 
+[EM: Unless you are specifically going to describe the SP16 CC's setup or refer to an imagine, this information is irrelevant. The reader would have to have previous knowledge of the subteam or have to go back and look for their report. Instead, briefly mention what is found in the current setup as a lead-in to the paragraphs below.]
+
 <div style = "text-align:center">
 <img
 align = "center"
@@ -84,8 +90,10 @@ The coiled flocculator was made of tubing wound around a cardboard tube. This wa
 ### Procedure
 First, all three pumps were powered and the blue influent valve was set to the open position. The water pump was turned on at 100 rpm, and the red effluent valve was set to the open position after a brief delay to prevent backflow of waste water. Water was pumped until the turbidimeter and flocculator were cleared out, after which the water pump was set to 76 rpm. The PID control was set from the OFF to ON state, automatically turning on the mixer. The state was then changed to PID Control, and the clay pump automatically turned on. Once the turbidimeter stabilized at 100 NTU, the pressure sensors were zeroed, and the coagulant pump was manually turned on at 20 rpm. The experiment was left to run for a set number of hours. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed.
 
+[EM: How were the pressure sensors zeroed?]
+
 ## Results and Analysis
-The first, second, and third trials, comparing the change in head loss (cm) over time (hours), were set at influent target turbidity of 100 NTU. Figure 4, Figure 5, and Figure 6  show the results of the trials.
+The first, second, and third trials, comparing the change in head loss (cm) over time (hours), were set at influent target turbidity of 100 NTU. Figure 4, Figure 5, and Figure 6 show the results of the trials.
 
 For trial 1, an increase in head loss over time was seen in the first and second sections of the flocculator, as shown by the data points for pressure sensors 0 and 1 on Figure 4. For trial 2, an increase in head loss over time was observed for all sections of the flocculator, as shown on the Figure 5. For trial 3, this trend was viewed in the first, second, and third section of the flocculator, as shown by the data for pressure sensor 0, 1, and 2 on Figure 6. This increase was because over the course of the experiment, coagulant nanoparticles accumulated on the flocculator wall, decreasing the tube’s diameter and increasing head loss over time.
 
@@ -136,8 +144,12 @@ Figure 7: Comparison of results from trials 2 and 3 after switching pressure sen
 ## Conclusions
 The first half of the semester was focused on designing the experiment and assembling the modified coiled flocculator; however, a few experiments were conducted. Trouble-shooting issues that arose during experimentation has stopped the team's work for now.  Up to this point, the team is not completely confident in the data obtained from the first three experiments. Although the results support the hypothesis that the rate of head loss accumulation decreases over the length of the flocculator, the team would like to address some of the issues with the experimental design and conduct more experiments before attempting to characterize the rate of free coagulant nanoparticle attachment.
 
+[EM: Excited to see how this work will continue! Great research thus far despite the issues faced. A suggestion: consider testing the pressure sensors before using them in an experiment by having them measure over a distance of an already known pressure change. Most of the sensors in the lab are wonky, so always assume the worst.]
+
 ## Future Work  
 Before continuing experiments, the team plans on replacing the unstable pressure sensor and recalibrating the PiD control. Once the team has finished troubleshooting the experimental design, experiments can be run again.  The team will begin by repeating the first three experiments to confirm whether or not the data is valid. After which we will begin varying the turbidity and velocity gradient in order to determine the first rate constants for the transport of coagulant nanoparticles to the clay and flocculator surfaces.
+
+[EM: Avoid using "we."]
 
 A question arose during experimentation that may be explored later. After noticing that the placement of where the coagulant was added was too far from the flocculator, the team questioned what other surfaces free coagulant nanoparticles were attaching to before entering the flocculator.  This may become an issue in characterizing nanoparticle attachment rate if the team does not know the actual coagulant concentration entering the flocculator.
 
