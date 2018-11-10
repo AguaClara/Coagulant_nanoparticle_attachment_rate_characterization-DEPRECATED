@@ -214,6 +214,9 @@ The flow rate of the clay pump is controlled by the PiD controller to reach the 
 |Pump Control (Clay)   |  Variable |  NA |
 
 ### Previous Iterations of Experimental Trials
+
+## First Iteration
+
 The first, second, and third trials, comparing the change in head loss (cm) over time (hours), were set at influent target turbidity of 100 NTU. Figure 4, Figure 5, and Figure 6 show the results of the trials.
 
 For trial 1, an increase in head loss over time was seen in the first and second sections of the flocculator, as shown by the data points for pressure sensors 0 and 1 on Figure 4. For trial 2, an increase in head loss over time was observed for all sections of the flocculator, as shown on the Figure 5. For trial 3, this trend was viewed in the first, second, and third section of the flocculator, as shown by the data for pressure sensor 0, 1, and 2 on Figure 6. This increase was because over the course of the experiment, coagulant nanoparticles accumulated on the flocculator wall, decreasing the tube’s diameter and increasing head loss over time.
@@ -260,3 +263,7 @@ src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_charac
 
 Figure 7: Comparison of results from trials 2 and 3 after switching pressure sensor 2 and 3, confirming pressure sensor 2 (grey) in trials 1 and 2 were faulty
 </div>
+
+## Second Iteration
+
+## Third Iteration
