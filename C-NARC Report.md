@@ -58,7 +58,7 @@ The experimental setup was similar to that of the Spring 2016 Contact Chamber su
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/setup.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
 Figure 2: Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup is the coiled flocculator with four attached pressure sensors.
 </div>
