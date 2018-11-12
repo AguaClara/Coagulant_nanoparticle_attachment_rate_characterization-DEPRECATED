@@ -87,8 +87,11 @@ A stock solution of PACl coagulant with the concentration of 0.1418g/L was also 
 
 The coiled flocculator was made of tubing wound around a cardboard tube. This was the section where the clay molecules collide with coagulant particles to form flocs [(Selimgir, M., Lo, R., Matai, K., 2018)](https://github.com/AguaClara/high_g_flocculation/blob/master/HighGFlocculation_Spring2018_ResearchReportFinalDraft.md). Four pressure sensors were attached, at equal distances, to the flocculator. The sensors measured the difference in pressure between the two points where they were attached. Four sensors were used in order to determine how the pressure, and thus, head loss changed along the length of the flocculator. Finally, the water was pumped out of the system through the effluent line.
 
+### ProCoDa Method File
+
+
 ### Procedure
-First, all three pumps were powered and the blue influent valve was set to the open position. The water pump was turned on at 100 rpm, and the red effluent valve was set to the open position after a brief delay to prevent backflow of waste water. Water was pumped until the turbidimeter and flocculator were cleared out, after which the water pump was set to 76 rpm. The PID control was set from the OFF to ON state, automatically turning on the mixer. The state was then changed to PID Control, and the clay pump automatically turned on. Once the turbidimeter stabilized at 100 NTU, the pressure sensors were zeroed, and the coagulant pump was manually turned on at 20 rpm. The experiment was left to run for a set number of hours. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed.
+First, ProCoDa was opened and the blue influent valve was set to the open position In manual operation, ProCoDa's state was changed to ON, which will turn on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent backflow of waste water. Then, ProCoda was switched from manual to automatic operation, after which the clay pump automatically turns on. Fifteen minutes later, before ProCoDa switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDa. The experiment was left to run for a set number of trials. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 [EM: How were the pressure sensors zeroed?]
 
@@ -213,9 +216,9 @@ The flow rate of the clay pump is controlled by the PiD controller to reach the 
 |Influent Turbidity   | Variable   | N/A  |
 |Pump Control (Clay)   |  Variable |  NA |
 
-### Previous Iterations of Experimental Trials
+## Previous Iterations of Experimental Trials
 
-## First Iteration
+### First Iteration
 
 The first, second, and third trials, comparing the change in head loss (cm) over time (hours), were set at influent target turbidity of 100 NTU. Figure 4, Figure 5, and Figure 6 show the results of the trials.
 
@@ -264,6 +267,6 @@ src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_charac
 Figure 7: Comparison of results from trials 2 and 3 after switching pressure sensor 2 and 3, confirming pressure sensor 2 (grey) in trials 1 and 2 were faulty
 </div>
 
-## Second Iteration
+### Second Iteration
 
-## Third Iteration
+### Third Iteration
