@@ -8,19 +8,18 @@
 Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded by clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
 
 ## Introduction
-Attachment of coagulant nanoparticles to the wall of the flocculator perpetuates several complications within an AguaClara plant. Firstly, it decreases the efficiency of the flocculator by increasing the rate at which head loss accumulates as water progresses through the plant, and thus, increases the energy demands of the plant. Additionally, the attachment of the nanoparticles to the flocculator walls increases the wastage of coagulant, resulting in higher doses of coagulant being required to compensate for the loss.
+Attachment of coagulant nanoparticles to the wall of the flocculator perpetuates several complications within an AguaClara plant. Firstly, it decreases the efficiency of the flocculator by increasing the rate at which head loss accumulates as water progresses through the plant, and thus, increases the energy demands of the plant. Attachment of the nanoparticles to the flocculator walls also increases coagulant wastage, resulting in higher doses of expensive coagulant being required to compensate for the loss.
 
-[EM: Side note, coagulant is also really expensive! It wastes a lot of money to continuously be buying it.]
 
 Although Fall 2018 is the first semester for C-NARC research, research conducted by the Rapid-Mix Contact Chamber (CC) teams have proven that free coagulant particles attach to the flocculator walls, effectively increasing the head loss through the flocculator by decreasing its diameter [(Tsang et. al., 2018)](https://github.com/AguaClara/contact_chamber/blob/master/ContactChamber_Spring2018.md).
-The C-NARC team was created to quantify the relationships identified by the Rapid Mix CC teams. The team hypothesizes that head loss accumulation in the flocculator is first order with respect to distance along the flocculator and seeks to determine the first order rate constants for the loss of coagulant to the flocculator walls by varying the velocity gradient and turbidity. The loss of coagulant to the flocculator walls is determined by measuring the rate of accumulation of head loss along the length of the flocculator tube. Head loss can be measured by attaching four pressure sensors at equal intervals along the length of the flocculator pipe.
+The C-NARC team was created to quantify the relationships identified by the Rapid Mix CC teams. The team hypothesizes that head loss accumulation in the flocculator is first order with respect to distance along the flocculator. C-NARC seeks to determine the first order rate constants for the loss of coagulant to the flocculator walls by varying the velocity gradient and turbidity. The loss of coagulant to the flocculator walls is determined by measuring the rate of accumulation of head loss along the length of the flocculator tube. Head loss can be measured by attaching four pressure sensors at equal intervals along the length of the flocculator pipe.
 
-[EM: The sentence that starts with "The team hypothesizes.." is super long. Consider breaking it into two sentences for readability.]
+
 
 
 ## Literature Review
 #### Coagulation and Flocculation
-AguaClara plants are heavily reliant on coagulation and flocculation processes to ensure that treated effluent meets water quality standards. Flocculation is the process by which particles collide and attach to each other, forming an agglomeration of contaminants. Coagulant nanoparticles provide a sticky surface for the successful attachment and aggregation of contaminant particles [(Guzman, Weber-Shirk, O’Connor, Pennock, Lion, & Du, 2018a)](https://aguaclara.github.io/Textbook/).  Generally, highly polar aluminium and iron based coagulants are used in water treatment, and these coagulants precipitate in water to form nanoparticles. However, these coagulants are acidic and contribute to a decrease in the pH of water below the Environmental Protection Agency’s standards for safe drinking water. Alternatively, AguaClara plants use Polyaluminium Chloride (PACl) because it is less acidic and can be added in smaller doses compared to other aluminium based coagulants, like alum [(Guzman et. al., 2018b)](https://aguaclara.github.io/Textbook/). The mechanism of flocculation is determined by the type of particle the coagulant is attaching to. Coagulant nanoparticles can attach to dissolved organic matter, organic suspended solids such as pathogens and inorganic suspended solids such as clay [(Guzman et. al., 2018b)](https://aguaclara.github.io/Textbook/). Upon the addition of the coagulant, the rate of coagulation is limited by how fast the precipitation of the coagulants in water to form nanoparticles occurs, how quickly the nanoparticles are transported to the contaminants, and the rate at which the contaminants adhere to the nanoparticles [(Guzman et. al., 2018c)](https://aguaclara.github.io/Textbook/).
+AguaClara plants are heavily reliant on coagulation and flocculation processes to ensure that treated effluent meets water quality standards. Flocculation is the process by which particles collide and attach to each other, forming an agglomeration of contaminants. Coagulant nanoparticles provide a sticky surface for the successful attachment and aggregation of contaminant particles [(Guzman, Weber-Shirk, O’Connor, Pennock, Lion, & Du, 2018a)](https://aguaclara.github.io/Textbook/).  Generally, highly polar aluminium and iron based coagulants are used in water treatment, and these coagulants precipitate in water to form nanoparticles. However, these coagulants are acidic and contribute to a decrease in the pH of water below the Environmental Protection Agency’s standards for safe drinking water. AguaClara plants use Polyaluminium Chloride (PACl) as an alternate because it is less acidic and can be added in smaller doses compared to other aluminium based coagulants, like alum [(Guzman et. al., 2018b)](https://aguaclara.github.io/Textbook/). The mechanism of flocculation is determined by the type of particle the coagulant is attaching to: Coagulant nanoparticles can attach to dissolved organic matter, organic suspended solids such as pathogens and inorganic suspended solids such as clay [(Guzman et. al., 2018b)](https://aguaclara.github.io/Textbook/). Upon the addition of the coagulant, the rate of coagulation is limited by how fast the precipitation of the coagulants in water to form nanoparticles occurs, how quickly the nanoparticles are transported to the contaminants, and the rate at which the contaminants adhere to the nanoparticles [(Guzman et. al., 2018c)](https://aguaclara.github.io/Textbook/).
 
 #### Head Loss
 In fluid mechanics, head refers to the energy of a fluid in terms of length and head loss is defined as the loss of energy of a fluid as it flows through a space [(Guzman et al., 2018d)](https://aguaclara.github.io/Textbook/).
@@ -51,7 +50,7 @@ Other teams have calculated head loss by measuring the change in pressure before
 ## Methods
 
 ### Experimental Apparatus
-The experimental setup was similar to that of the Spring 2016 Contact Chamber subteam. However, C-NARC’s setup did not include the contact chamber and the needle valve. Additionally, four pressure sensors were attached at equal distances on the flocculator. See the manual for more information on the setup.
+The experimental setup, shown in Figure 2 and Figure 3, included: three pumps to introduce water, clay, and coagulant to the system; a flow accumulator; an influent turbidimeter;  a modified coiled flocculator; and an air pump for cleaning the system between each experimental trial. See the manual for more information on the setup.
 
 [EM: Unless you are specifically going to describe the SP16 CC's setup or refer to an imagine, this information is irrelevant. The reader would have to have previous knowledge of the subteam or have to go back and look for their report. Instead, briefly mention what is found in the current setup as a lead-in to the paragraphs below.]
 
@@ -71,7 +70,7 @@ src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_charac
 Figure 3: Image of the bench setup, including the modified coiled flocculator.
 </div>
 
-The experiment setup shown in Figure 2 and Figure 3 models the water flow through a plant on a smaller, lab-sized scale as follows:
+The experiment setup shown models the water flow through a plant on a smaller, lab-sized scale as follows:
 1. The blue influent line delivers water to the water pump.
 2. A concentration of clay stock is prepared and introduced into the water.
 3. The pumps deliver the water and clay mixture to the turbidimeter.
@@ -270,3 +269,5 @@ Figure 7: Comparison of results from trials 2 and 3 after switching pressure sen
 ### Second Iteration
 
 ### Third Iteration
+
+
