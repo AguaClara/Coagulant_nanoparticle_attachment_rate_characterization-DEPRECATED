@@ -261,18 +261,38 @@ The state that powers the mixer
 The state that powers the clay pump
 The flow rate of the clay pump is controlled by the PiD controller to reach the target turbidity determined by the turbidimeter
 
+#### Experiment
+
+#### Cleaning (air)
+
+#### Cleaning (water)
+
 ### Set Points
 | Set Point | Operation Type | Value |
 |:--------    |:--------:|:----:|
 | OFF      |         1     |             0 |
 |ON   | 1  |  1 |
-|Influent Turbidity Target   | Constant | Varied  |
+|Influent Turbidity Target  | Variable | increment rep function  |
 |P   |  Constant |2.5m   |
 | i  |Constant   | 45m  |
 | D   |  Constant |0   |
 |Influent Turbidimeter ID   |  Constant |  2 |
-|Influent Turbidity   | Variable   | N/A  |
-|Pump Control (Clay)   |  Variable |  NA |
+|Influent Turbidity   | Variable   | HF turbidimeter function  |
+|Pump Control (Clay)   |  Variable |  PID setpoint no reset function |
+|Coag flow rate| Constant | 49.6m |
+|mL per rev YB| Constant | 149m |
+|PumpControl (Coag)| Variable |  pump control function |
+|Mixing time| Constant | 10 |
+|PID clay time| Constant | 900 |
+|Bubble time| Constant | 240 |
+|Experiment time| Constant | 10.8k |
+|Clean water time| Constant | 300 |
+|slope| Constant |-20 |
+|intercept| Constant |100 |
+|max x| Constant  | 5 |
+|reps| Constant | 3 |
+|loop counter| Variable  | count states function |
+|count target| variable | multiply function |
 
 ## Previous Iterations of Experimental Trials
 
