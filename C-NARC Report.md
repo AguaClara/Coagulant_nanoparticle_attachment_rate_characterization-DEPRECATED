@@ -1,11 +1,10 @@
 # Coagulant Nanoparticle Attachment Rate Characterizaion, Fall 2018
 #### Desiree Sausele and Meera Shah
-#### September 28, 2018
+#### November 20, 2018
 
-[EM: Hello! Similar to last report, I will be putting my comments in brackets below the paragraph in which I am referring to. Thx!]
 
 ## Abstract
-Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded by clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
+Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded to clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
 
 ## Introduction
 Attachment of coagulant nanoparticles to the wall of the flocculator perpetuates several complications within an AguaClara plant. Firstly, it decreases the efficiency of the flocculator by increasing the rate at which head loss accumulates as water progresses through the plant, and thus, increases the energy demands of the plant. Attachment of the nanoparticles to the flocculator walls also increases coagulant wastage, resulting in higher doses of expensive coagulant being required to compensate for the loss.
@@ -53,7 +52,7 @@ Other teams have calculated head loss by measuring the change in pressure before
 
 The team conducted experiments with four different iterations of the experimental design. The three initial iterations were modified and improved upon before arriving at the current version.
 
-The current experimental setup, shown in Figure 2 and Figure 3, included: three pumps to introduce water, clay, and coagulant to the system; a flow accumulator; an influent turbidimeter;  a modified coiled flocculator; and an air pump for cleaning the system between each experimental trial. See the manual for more information on the setup.
+The current experimental setup, shown in Figure 2 and Figure 3, included the following: three pumps to introduce water, clay, and coagulant to the system; a flow accumulator; an influent turbidimeter;  a modified coiled flocculator; and an air pump for cleaning the system between each experimental trial. See the manual for more information on the setup.
 
 <div style = "text-align:center">
 <img
@@ -92,7 +91,7 @@ After each experimental trial, air bubbles were introduced into the system at 1 
 
 ### Procedure
 
-PID Control turns on the clay pump and runs for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, Experiment, starts the coagulant pump and runs for three hours. This is the state from which the team collects data. After Experiment is Cleaning (air) which runs for four minutes. This state stops the coagulant and clay pump and starts the 1 RPM air pump to introduce air into the system. The last state is Cleaning (water) which runs for five minutes and turns off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDa method file, refer to the manual.
+The system is fully automated through ProCoDa to run through three trials at each target NTU (100, 80, 60, 40, 20), starting at the highest turbidity target and ending with the lowest. PID CONTROL turns on the clay pump and runs for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, starts the coagulant pump and runs for three hours. This is the state from which the team collects data. After EXPERIMENT is CLEANING (AIR) which runs for four minutes. This state stops the coagulant and clay pump and starts the 1 RPM air pump to introduce air into the system. The last state is CLEANING (WATER) which runs for five minutes and turns off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDa method file, refer to the manual.
 
 First, the C-NARC ProCoDa method file was opened and the blue influent valve was set to the open position In manual operation, ProCoDa's state was changed to ON, which turns on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of waste water. Then, ProCoda was switched from manual to automatic operation, after which the clay pump automatically turns on. Fifteen minutes later, before ProCoDa switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDa. The experiment was left to run for a set number of trials. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
@@ -103,7 +102,7 @@ The trials for the current iteration were run in triplicates, with each triplica
 
 The graphs also show that there is a decrease in the rate of change of head loss, depicted by the slope, across the length of the flocculator for all triplicates. The largest change in head loss was experienced by the first section of the flocculator because this was where nanoparticles accumulated the most. Across the length of the flocculator, the amount of free coagulant nanoparticles for attachment decreased because more coagulant had attached either to clay or to the first sections of the flocculator. Therefore, the rate of attachment of coagulant nanoparticles to the wall of the flocculator decreases, thus decreasing the rate of head loss along the length of the flocculator.
 
-The team expected to see the overall head loss increase as turbidity decreased. This is because as turbidity decreases, there is less clay for coagulant to attach to and thus there are more free coagulant nanoparticles that can attach to the flocculator walls. However, aside from the 20 NTU trials, the team saw a decrease in head loss accumulation as turbidity decreased.
+The team expected to see the overall head loss increase as turbidity decreased. This is because as turbidity decreases, there is less clay for coagulant to attach to and thus there are more free coagulant nanoparticles that can attach to the flocculator walls. However, aside from the 20 NTU trials, the team saw a decrease in head loss accumulation as turbidity decreased. This result suggests that perhaps it is the clay or a coagulant/clay mixture sticking to the flocculator.
 
 </div>
 
@@ -162,15 +161,13 @@ For results of experiments run with the other experimental designs, refer to the
 ## Conclusions
 The first half of the semester was focused on designing the experiment and assembling the modified coiled flocculator; however, only a few experiments were conducted. The team is also not completely confident in the data obtained from the first three experiments. Although the results support the hypothesis that the rate of head loss accumulation decreases over the length of the flocculator, the team wanted to address some of the issues with the experimental design and conduct more experiments before attempting to characterize the rate of free coagulant nanoparticle attachment.
 
-Since changing the pressure sensors from 200kPA to 7kPA and automating the system, the team has only run one successful experiment. The results from this experiment clearly support the hypothesis that the rate of head loss accumulation is greatest in the first section of the flocculator and decreases over the length of the flocculator. The team is currently having trouble with the clay clogging in the microtubing and is working on trouble-shooting this issue.
+Since changing the pressure sensors from 200kPA to 7kPA and automating the system, the team has only run one successful experiment. The results from this experiment clearly support the hypothesis that the rate of head loss accumulation is greatest in the first section of the flocculator and decreases over the length of the flocculator. More successful experiments should be run to confirm these results before moving on to calculating first rate constants for coagulant attachment. However, the team is currently having trouble with the clay clogging in the microtubing and is working on trouble-shooting this issue.
 
 
 ## Future Work  
 The C-NARC team will run several more experiments using the current version of the experimental design. The team still needs to run trials in which the velocity gradient is varied. Next, the team will calculate the first order rate constant for the transport of coagulant nanoparticles to the clay and flocculator surfaces.
 
 A question arose during experimentation that can be explored in the future. After noticing that the coagulant was introduced into the system too far from the flocculator, the team questioned if other surfaces, such as the microbore tube through which coagulant was pumped, were also attaching free coagulant nanoparticles. This may become an issue in characterizing nanoparticle attachment rate if the the actual coagulant concentration entering the flocculator cannot be accurately determined. A future task is to determine if attachment is occurring to other surfaces of the tubing and the extent to which this is occurring.
-
-
 
 
 ## References
@@ -199,7 +196,7 @@ Tsang, C., Yun, Y., & Delgado, C., (2018). Contact Chamber, Spring 2018.
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/setup.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
 Figure 9: Experimental setup including the coiled flocculator with four attached pressure sensors.
 </div>
@@ -207,6 +204,7 @@ Figure 9: Experimental setup including the coiled flocculator with four attached
 #### Materials
 - Pumps
   - Three (3) Masterflex 1.6-100 RPM pumps
+  - One (1) Masterflex 1 RPM pump
 - Turbidimeter
   - One (1) HF Scientific Inc MicroTOL Turbidimeter 0-1000 NTU
     - measures influent turbidity after clay additional
@@ -355,7 +353,25 @@ Figure 13: Comparison of results from trials 2 and 3 after switching pressure se
 
 ### Second Iteration
 
-The fourth trial was run for 15 hours. and the experimental results showed *WHAT DID THE RESULTS SHOW, INSERT DIAGRAM*
+The fourth trial was run for 15 hours. and the experimental results showed the first pressure sensor had the fastest rate of head loss accumulation, but the rest of the data has many disruptions as seen in Figure 14. The team speculated that the jumps may have been caused by a fluctuating influent turbidity as seen in Figure 15 or by a disturbance to the lab bench. Regardless, this data could not be used because the team needs a linear trend with minimal noise to determine the first order rate constants.
+
+<div style = "text-align:center">
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/15hrexp.png?raw=true" >
+
+
+Figure 14: Results from the 15 hour experiment. Note the jumps in data points for pressure sensors 1, 2, and 3.
+</div>
+
+<div style = "text-align:center">
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/15hrturb.png?raw=true" >
+
+
+Figure 15: Influent turbidity data for the 15 hour experiment. The cause of the spikes in turbidity is unknown to the team.
+</div>
 
 After this trial, the team decided that the experiment time could be shortened to 3 hours because the data needed to calculate the first order rate constants could be acquired within this time.
 
