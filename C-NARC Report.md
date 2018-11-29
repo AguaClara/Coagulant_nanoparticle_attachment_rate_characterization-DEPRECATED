@@ -1,7 +1,8 @@
 # Coagulant Nanoparticle Attachment Rate Characterizaion, Fall 2018
 #### Desiree Sausele and Meera Shah
 #### November 20, 2018
-
+[Shuo: Hello C-NARC! I'll be writing my comments in the square brackets like this. Please feel free to delete this after revising or updating your report. Overall the report looks good but you can still improve your report in the following ways:
+First, when you try to analyze your results or the figures you have shown, fit your data with some mathematical models and show the numbers. They are more convincing than words. Second, in your conclusion part, state why your results are important to AguaClara. Those can be found in the grading rubric, and before submitting your report, you can do a self-check. Looking forward to your final report!]
 
 ## Abstract
 Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded to clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
@@ -87,7 +88,7 @@ A stock solution of PACl coagulant with the concentration of 0.1418g/L was also 
 The coiled flocculator was made of tubing wound around a cardboard tube. This was the section where the clay molecules collide with coagulant particles to form flocs [(Selimgir, M., Lo, R., Matai, K., 2018)](https://github.com/AguaClara/high_g_flocculation/blob/master/HighGFlocculation_Spring2018_ResearchReportFinalDraft.md). Four pressure sensors were attached, at equal distances, to the flocculator. The sensors measured the difference in pressure between the two points where they were attached. Four sensors were used in order to determine how the pressure, and thus, head loss changed along the length of the flocculator. Finally, the water was pumped out of the system through the effluent line.
 
 #### Cleaning
-After each experimental trial, air bubbles were introduced into the system at 1 rpm by the air pump. Water was also continually pumped at 76 rpm by the water pump to carry the air bubble through the flocculator. This cleaning system was used to scrape and clean any coagulant buildup on the flocculator wall in preparation for the next trial. Any fluids that entered the cleaning system's microbore tubing the experiment, while the air pump was off, was contained in the 1L bottle attached to the air pump.
+After each experimental trial, air bubbles were introduced into the system at 1 rpm by the air pump. Water was also continually pumped at 76 rpm by the water pump to carry the air bubble through the flocculator. This cleaning system was used to scrape and clean any coagulant buildup on the flocculator wall in preparation for the next trial. Any fluids that entered the cleaning system's microbore tubing the experiment, while the air pump was off, was contained in the 1L bottle attached to the air pump. [Keep the font of "Cleaning" same as before and after.]
 
 ### Procedure
 
@@ -156,6 +157,7 @@ Figure 8: Average head loss of three trials over time at 20 NTU
 </div>
 
 For results of experiments run with the other experimental designs, refer to the manual.
+[The figures are straightforward and easy to follow basically. You might noticed that the headloss over time somehow showed a linear relationship or quadratic some time. You can use linear regression to show the slope or the gradient of the line. In that case, readers can get a better understanding how the headloss varies with time.]
 
 ## Conclusions
 
