@@ -98,7 +98,7 @@ The system was fully automated, through ProCoDa, to run three trials at each tar
 
 ## Results and Analysis
 
-The trials for the current iteration were run in triplicates, with each triplicate containing 3 trials with the same NTU. The average of each triplicate was taken, and the results are shown in Figures 4 to 8. The graphs show that there is an increase in head loss over time for all sections of the flocculators. This increase is because over the course of the trial, coagulant nanoparticles accumulated on the flocculator wall, decreasing the tube's diameter and increasing the head loss.
+The trials for the current iteration were run in triplicates, with each triplicate containing 3 trials of the same NTU. The average of each triplicate was taken, and the results are shown in Figures 4 to 8. The graphs show that there is an increase in head loss over time for all sections of the flocculators. This increase is because over the course of the trial, coagulant nanoparticles accumulated on the flocculator wall, decreasing the tube's diameter and increasing the head loss.
 
 The graphs also show that there is a decrease in the rate of change of head loss, depicted by the slope, across the length of the flocculator for all triplicates. The largest change in head loss was experienced by the first section of the flocculator because this was where nanoparticles accumulated the most. Across the length of the flocculator, the amount of free coagulant nanoparticles for attachment decreased because more coagulant had attached either to clay or to the first sections of the flocculator. Therefore, the rate of attachment of coagulant nanoparticles to the wall of the flocculator decreases, thus decreasing the rate of head loss along the length of the flocculator.
 
@@ -109,7 +109,7 @@ The team expected to see the overall head loss increase as turbidity decreased. 
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/avg100ntu.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/100NTU.png?raw=true" >
 
 Figure 4: Average head loss of three trials over time at 100 NTU
 </div>
@@ -119,7 +119,7 @@ Figure 4: Average head loss of three trials over time at 100 NTU
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/avg80ntu.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/80NTU.png?raw=true" >
 
 Figure 5: Average head loss of three trials over time at 80 NTU
 </div>
@@ -129,7 +129,7 @@ Figure 5: Average head loss of three trials over time at 80 NTU
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/avg60ntu.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/60NTU.png?raw=true" >
 
 Figure 6: Average head loss of three trials over time at 60 NTU
 </div>
@@ -139,7 +139,7 @@ Figure 6: Average head loss of three trials over time at 60 NTU
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/avg40ntu.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/40NTU.png?raw=true" >
 
 Figure 7: Average head loss of three trials over time at 40 NTU
 </div>
@@ -151,7 +151,7 @@ The graph in Figure 8 shows a rapid increase and decrease in head loss at approx
 <div style = "text-align:center">
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/avg20ntu.png?raw=true" >
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/20NTU.png?raw=true" >
 
 Figure 8: Average head loss of three trials over time at 20 NTU
 </div>
