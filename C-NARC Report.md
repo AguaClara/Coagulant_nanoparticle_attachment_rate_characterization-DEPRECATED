@@ -376,7 +376,7 @@ src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_charac
 Figure 15: Influent turbidity data for the 15 hour experiment. The cause of the spikes in turbidity is unknown to the team.
 </div>
 
-After this trial, the team decided that the experiment time could be shortened to 3 hours because the data needed to calculate the first order rate constants could be acquired within a shorter experimental time. The ProCoDa file was also changed to automate future experiments and allow the team to conduct more trials at once. To do this, four new states were created aside from ON and OFF. More information can be found in the ProCoDa Method File section of the manual.
+After this trial, the experiment time was shortened to 3 hours because the data needed to calculate the first order rate constants could be acquired within a shorter experimental time. The ProCoDa file was also changed to automate future experiments and allow the team to conduct more trials at once. To do this, four new states were created aside from ON and OFF. More information can be found in the ProCoDa Method File section of the manual.
 
 ### Third Iteration
 
