@@ -1,10 +1,10 @@
 # Coagulant Nanoparticle Attachment Rate Characterizaion, Fall 2018
 #### Desiree Sausele and Meera Shah
-#### November 20, 2018
+#### December 8, 2018
 
 
 ## Abstract
-Attachment of free coagulant nanoparticles to the flocculator wall decreases the amount of coagulant available for flocculation of clay particles. However, coagulant bounded to clay cannot attach to the flocculator wall. The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. The objective was to determine the first order rate constants for loss of free coagulant nanoparticles to the flocculator walls and for attachment of coagulant to clay particles at varying clay concentrations and velocity gradients.
+The Fall 2018 Coagulant - Nanoparticle Attachment Rate Characterization (C-NARC) team’s goal was to determine the rate at which free coagulant attached to the flocculator wall and to calculate the rate at which the coagulant attached to clay. By attaching four pressure sensors along the length of a coiled flocculator, the team observed how the rate of head loss accumulation changed for each section of the flocculator at varying turbidity levels. The results showed that the rate decreased along the length of the flocculator, but conflicting trends were observed for how the rate changed at varying turbidities. 
 
 ## Introduction
 Attachment of coagulant nanoparticles to the wall of the flocculator perpetuates several complications within an AguaClara plant. It primarily decreases the efficiency of the flocculator by increasing the rate at which head loss accumulates as water progresses through the plant, and thus, increases the energy demands of the plant. Attachment of the nanoparticles to the flocculator walls also increases coagulant wastage, resulting in higher doses of expensive coagulant being required to compensate for the loss.
