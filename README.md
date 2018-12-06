@@ -7,4 +7,6 @@ The C-NARC subteam is investigating how the rate of attachment of coagulant nano
 
 ## Fall 2018
 * [Symposium](https://docs.google.com/presentation/d/1IRQYtYWkajkU4LtEYYGQ2ydx1ECn3m4umVHbGsrjSYM/edit?usp=sharing)
-* [Final Presentation](https://docs.google.com/presentation/d/1Q7-qbHmb0kl0DL85YbV2Rl10akIE4ajNxfZmnW061Kc/edit?usp=sharing)
+* Final Presentation
+** [Final Presentation](https://docs.google.com/presentation/d/1Q7-qbHmb0kl0DL85YbV2Rl10akIE4ajNxfZmnW061Kc/edit?usp=sharing)
+** [Video](https://www.youtube.com/watch?v=gHzd7pCGbTs&t=0s&index=5&list=PLhsGtpY8ipdZTn2HPI6C2uH44ADmc0Ra6)
