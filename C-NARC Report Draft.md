@@ -42,6 +42,7 @@ $$\small
 The velocity can be calculated by the fact that the water flow is laminar due to the small diameter of the tubing.
 
 ![Velocity_Profile](/Images/Velocity_Profile.png)
+Figure 1: Velocity Profile of laminar flow.
 
 ##Previous Work
 Previous research from the Fall 2018 C-NARC team focused on determining the rate at which free coagulant attached to the flocculator wall. The team connected four pressure sensors along the coiled flocculator at equal distances to observe the rate of headloss accumulation in each section. The results showed that the rate of headloss accumulation decreased along the length of the flocculator (ref). These results reflected that the coagulant had attached either to clay or to the first sections of the wall. Additionally, the relationship between clay concentrations and rate of headloss accumulation was unclear. The first section of the flocculator showed a direct relationship between turbidity and head loss accumulation in which a decrease in clay concentration resulted in a decrease in headloss accumulation. Conversely, the second and third section showed an inverse relationship between turbidity and rate of headloss accumulation while the fourth section showed no relationship [(Sausele & Shah, 2018)](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/C-NARC%20final%20report.pdf). It was hypothesized that the inverse relationship occurred because as turbidity decreased, the amount of clay for coagulant to attach to decreased, thus there were more free coagulant nanoparticles to attach to the flocculator walls. It is unknown why in the first section a decrease in turbidity resulted in less headloss accumulation. This result may suggest that a clay-coagulant mixture was sticking to the flocculator walls as well as free coagulant particles.
@@ -54,3 +55,5 @@ Gebbie, P. (2006). An Operator's Guide to Water Treatment Coagulants [PDF file].
 Weber-Shirk, M., Guzman, J., O'Connor, C., Pennock, W., Lion, L. & Du, Y. (2018). *Aguaclara Textbook*. Retrieved from https://aguaclara.github.io/Textbook/index.html.
 
 Sausele D., Shah, M., (2018). Coagulant Nanoparticle Attachment Rate Characterization, Fall 2018
+
+Kinetic Energy of Tube Flow. (n.d.). Retrieved February 22, 2019, from http://hyperphysics.phy-astr.gsu.edu/hbase/pfric2.html
