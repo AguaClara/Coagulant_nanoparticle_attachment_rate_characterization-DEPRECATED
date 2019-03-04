@@ -22,3 +22,15 @@ def laminarvelocity(r):
 
 laminarvelocity((1/16))
 ```
+
+```python
+Diam=2*R
+Nu=pc.viscosity_kinematic(293)
+Re=pc.re_pipe(TubeFlow, Diam, Nu)
+CD=24/Re
+rho=pc.density_water(293)
+rcoagulant=(100*u.nm).to(u.inch)
+rcoagcalc=(1*u.inch-rcoagulant)/(1*u.inch)
+
+Fdrag=CD*np.pi*rcoagulant*rcoagulant*rho*laminarvelocity(rcoagcalc)*laminarvelocity(rcoagcalc)/2
+```
