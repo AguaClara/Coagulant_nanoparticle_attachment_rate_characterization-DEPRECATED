@@ -34,3 +34,10 @@ rcoagcalc=(1*u.inch-rcoagulant)/(1*u.inch)
 
 Fdrag=CD*np.pi*rcoagulant*rcoagulant*rho*laminarvelocity(rcoagcalc)*laminarvelocity(rcoagcalc)/2
 ```
+
+```python
+g=9.8*u.m/(u.s**2)
+Fdrag=-32.64*u.m/u.s
+coagheadloss=-Fdrag/(np.pi*R*R*rho*g)
+coagheadloss
+```
