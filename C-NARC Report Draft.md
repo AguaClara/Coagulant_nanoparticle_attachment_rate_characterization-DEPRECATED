@@ -57,11 +57,10 @@ Before performing any experiments, the C-NARC team used Python to carry out theo
 | Constant |  Definition   | Value |
 |:------- |:--------:|:-----:|
 | R     | Distance from center of tubing to tube wall |$0.085 in$ |
-| μ (mu)    | Dynamic viscosity| $0.001005 \frac {kg}{m/s}$|
+| $\mu$ (mu)    | Dynamic viscosity| $0.001005 \frac {kg}{m/s}$|
 | RPM  | Water Pump rate per minute| $76 \frac{rev}{min}$ |
-| Whale | Pasta | Twilight |
-| 𝞶 (nu) | Kinematic Viscosity | $0.001005 \frac{kg}{ms}$|
-| ⍴ | Density of water | $ 998.2 \frac{kg}{m^3}$|
+| $\nu$ (nu) | Kinematic Viscosity | $0.001005 \frac{kg}{ms}$|
+| $\rho$ | Density of water | $998.2 \frac{kg}{m^3}$|
 | g| Gravitational constant | $9.8 \frac {m}{s^2}$ |
 | r| Distance from the center of the nanoparticle to the middle to the tube| $0.002134 m$|
 | $V_{f}$| Volumetric Flow in size 16 tubing per revolution | $0.8 \frac{mL}{rev}$ |
@@ -73,7 +72,7 @@ Therefore, the tube flow represents the amount of solution per time that has flo
 
 <!-- Next, given that μ is the dynamic viscosity, the pressure gradient is found by the following formula:$$ \frac{ΔP}{ΔX} = \frac {8μU_{m}}{R²} $$ -->
 <!-- This pressure gradient represents how the pressure will vary within the tubing due to viscosity, velocity and radius. -->
-This mean velocity represents the average velocity of one coagulant nanoparticle flowing through the tube. Finally, the maximum velocity is given by the following formula:
+This mean velocity represents the average velocity of one coagulant nanoparticle flowing through the tube. Finally, the maximum velocity in fully developed velocity profile is given by the following formula:
 $$ v_{m} = 2u_{m} $$
 
 This shows the maximum velocity of a coagulant nanoparticle which would be in the middle of the tube due to the least amount of drag or shear force. This maximum velocity is then used to find the velocity at the center of one coagulant nanoparticle on the wall of the tubing which was calculated by the following formula:
@@ -84,15 +83,15 @@ The next step was to find the drag force on one coagulant nanoparticle on the tu
  $$ Cd = \frac{24}{Re}$$
 where the Reynolds number is $$ Re = \frac{pvD}{μ}$$
  and p is the density, v is the velocity, D is the diameter of the tubing and μ is the dynamic viscosity. Then, the drag force is calculated by:
-$$ F_{d} = \fracCdApv^2
-Given a velocity of ____, the found drag force was ____.
+$$ F_{d} = \frac {1}{2} C_{d} A pv^2$$
+Given a velocity of $5.769×10^{-6} m/s$, the calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The next step was to find the headloss from one coagulant nanoparticle on the tubing. The headloss was given by the formula:
+$$ H_{L} = \frac{-F_{d}}{\pi R²pg}
+$$
+The head loss was calculated as $5.968×10^{-21} cm$. This was compared to last semester’s results from 20 NTU. We picked the lowest NTU available because at a lower NTU, more coagulant will attach to the wall of the tubing due to less clay particles in the solution. In order to calculate the number of coagulant particles attached to the walls of the tubing, the average headloss at each pressure sensor was divided by the headloss of one coagulant particle.
+$$	Nanoparticles\:on\:wall = \frac {H_{Lavg}\:at\:one\:sensor}{H_{L}\:from\:1 \:coagulant}$$
 
-The next step was to find the headloss from coagulant nanoparticle on the tubing. The headloss was given by the formula:
-				HL = -Fd/(𝛑R²pg)
-The head loss was calculated as ____. This was compared to last semester’s results of _____ from 20 NTU.
-We picked the lowest NTU available because at a lower NTU, more coagulant will attach to the wall of the tubing due to less clay particles in the solution. This shows the total number of coagulant particles attached to the walls of the tubing.
+This equation shows the number of nanoparticles from each section of the flocculator. The total number of nanoparticles attached to the whole flocculator tubing would be the sum of each total at the four pressure sensors. The total number of coagulant nanoparticles on the whole flocculator was $4.71 * 10^{20} \frac{particles}{hour}$.
 
-The next goal for the team will be to calculate the total number of coagulant particles from the dose.
 
 
 
@@ -168,9 +167,11 @@ After describing a particular result, within a paragraph, go on to connect your 
 * If the data do not support your hypothesis, is there another hypothesis that describes your new data?
 
 ## Conclusions
-Explain what you have learned and how that influences your next steps. Why does what you discovered matter to AguaClara?
+The C-NARC team focused on the theoretical calculations to find the headloss from one coagulant nanoparticle attached to the walls on the flocculator for the first half of the semester. This was then compared to the average headloss from each pressure sensor to find the total number of coagulant nanoparticles on the tubing. This value is important to AguaClara in the lab because if coagulant is attaching to the walls, the rate and total amount of attachment to clay particles will be decreased. The number of coagulant nanoparticles on the walls also varies with respect to turbidity levels in which rate attachment to the walls are higher at lower NTUs. At lower turbidity levels, there are fewer clay particles in solution and therefore the coagulant will attach to the walls faster than if there were more clay particles to attach to.
 
-Make sure that you defend your conclusions with facts and results.
+In the second half of the semester, the C-NARC team will be focused on finding the attachment rate of coagulant nanoparticles to clay particles. This will be important in finding optimal flow rates and turbidity levels in which minimal head loss occurs so the least amount of coagulant is wasted.
+
+
 
 ## Future Work
 Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension. The first information the team needs to find out would be how many coagulant nanoparticles there are in total in the solution so the team can eliminate the amount sticking to the wall. To do that, the team will be using the information that there is 0.1418 g/L of Al and find out the molecular formula ([Al<sub>n</sub>(OH)<sub>m</sub>Cl<sub>3n-m</sub>]<sub>x</sub>) using the known basicity (m/3n). After that, the team can use the density of Al to figure out initial volume concentration of the coagulant stock solution.

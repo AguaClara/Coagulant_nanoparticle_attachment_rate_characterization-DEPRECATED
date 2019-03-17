@@ -49,6 +49,13 @@ npwall1=HLavg1/coagheadloss
 npwall2=HLavg2/coagheadloss
 npwall3=HLavg3/coagheadloss
 
+npwall0
+npwall1
+npwall2
+npwall3
+
+npwalltot=npwall0+npwall1+npwall2+npwall3
+npwalltot
 ```
 
 ```python
