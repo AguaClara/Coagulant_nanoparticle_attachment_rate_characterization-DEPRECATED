@@ -88,7 +88,7 @@ Given a velocity of $5.769×10^{-6} m/s$, the calculated drag force was $-8.55*1
 $$ H_{L} = \frac{-F_{d}}{\pi R²pg}
 $$
 The head loss was calculated as $5.968×10^{-21} cm$. This was compared to last semester’s results from 20 NTU. We picked the lowest NTU available because at a lower NTU, more coagulant will attach to the wall of the tubing due to less clay particles in the solution. In order to calculate the number of coagulant particles attached to the walls of the tubing, the average headloss at each pressure sensor was divided by the headloss of one coagulant particle.
-$$	Nanoparticles\:on\:wall = \frac {H_{Lavg}\:at\:one\:sensor}{H_{L}\:from\:1 \:coagulant}$$
+$$	Nanoparticles\:on\:wall = \frac {H_{L,avg}\:at\:one\:sensor}{H_{L}\:from\:1 \:coagulant}$$
 
 This equation shows the number of nanoparticles from each section of the flocculator. The total number of nanoparticles attached to the whole flocculator tubing would be the sum of each total at the four pressure sensors. The total number of coagulant nanoparticles on the whole flocculator was $4.71 * 10^{20} \frac{particles}{hour}$.
 
