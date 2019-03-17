@@ -70,27 +70,43 @@ $$ Tube Flow = RPM * V_{f}$$
 
 Therefore, the tube flow represents the amount of solution per time that has flowed through the tube. The mean velocity is then calculated from the tube flow divided by the cross sectional area of the tubing.
  $$u_{m} = \frac{TubeFlow}{\pi R²}$$
-This mean velocity represents the average velocity of one coagulant nanoparticle flowing through the tube. Next, given that μ is the dynamic viscosity, the pressure gradient is found by the following formula:
-$$ \frac{ΔP}{ΔX} = \frac {8μU_{m}}{R²} $$
-This pressure gradient represents how the pressure will vary within the tubing due to viscosity, velocity and radius. Finally, the maximum velocity is given by the following formula:
-$$ v_{m} = \frac{1}{4n} (\frac{ΔP}{ΔX})R^2$$  
+
+<!-- Next, given that μ is the dynamic viscosity, the pressure gradient is found by the following formula:$$ \frac{ΔP}{ΔX} = \frac {8μU_{m}}{R²} $$ -->
+<!-- This pressure gradient represents how the pressure will vary within the tubing due to viscosity, velocity and radius. -->
+This mean velocity represents the average velocity of one coagulant nanoparticle flowing through the tube. Finally, the maximum velocity is given by the following formula:
+$$ v_{m} = 2u_{m} $$
 
 This shows the maximum velocity of a coagulant nanoparticle which would be in the middle of the tube due to the least amount of drag or shear force. This maximum velocity is then used to find the velocity at the center of one coagulant nanoparticle on the wall of the tubing which was calculated by the following formula:
 $$ V(r) = v_{m}[1- \frac{r^2}{R^2}]$$
-Since the radius of the coagulant nanoparticle is $0.45nm$ and the radius of the tube is $0.002159m$, the value of “r” is the difference between these which is $0.002158955m$.
-Given this radius, the velocity of one particle was calculated
+Since the radius of the coagulant nanoparticle is $0.45nm$ and the radius of the tube is $0.002159m$, the value of “r” is the difference between these which is $0.002158955m$. Given this radius, the velocity of one particle was calculated to be $5.7692×10^-6$ $m/s$.
+
+The next step was to find the drag force on one coagulant nanoparticle on the tubing. First, the drag coefficient is given by:
+ $$ Cd = \frac{24}{Re}$$
+where the Reynolds number is $$ Re = \frac{pvD}{μ}$$
+ and p is the density, v is the velocity, D is the diameter of the tubing and μ is the dynamic viscosity. Then, the drag force is calculated by:
+$$ F_{d} = \fracCdApv^2
+Given a velocity of ____, the found drag force was ____.
+
+The next step was to find the headloss from coagulant nanoparticle on the tubing. The headloss was given by the formula:
+				HL = -Fd/(𝛑R²pg)
+The head loss was calculated as ____. This was compared to last semester’s results of _____ from 20 NTU.
+We picked the lowest NTU available because at a lower NTU, more coagulant will attach to the wall of the tubing due to less clay particles in the solution. This shows the total number of coagulant particles attached to the walls of the tubing.
+
+The next goal for the team will be to calculate the total number of coagulant particles from the dose.
+
+
 
 ### Experimental Apparatus
 The Fall 2018 team conducted experiments with four different iterations of the experimental design. The three initial iterations were modified and improved upon before arriving at the current version.
 
-The experimental setup, shown in Figure 2 and Figure 3, included the following: three pumps to introduce water, clay, and coagulant to the system; a flow accumulator; an influent turbidimeter;  a modified coiled flocculator; and an air pump for cleaning the system between each experimental trial. See the manual for more information on the setup.
+The experimental setup, shown in Figure 3 and Figure 4, included the following: three pumps to introduce water, clay, and coagulant to the system; a flow accumulator; an influent turbidimeter;  a modified coiled flocculator; and an air pump for cleaning the system between each experimental trial. See the manual for more information on the setup.
 
 <div style = "text-align:center">
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
-Figure 2: Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup was the coiled flocculator with four attached pressure sensors.
+Figure 3: Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup was the coiled flocculator with four attached pressure sensors.
 </div>
 
 <div style = "text-align:center">
@@ -98,7 +114,7 @@ Figure 2: Experimental setup showing the flow of water, coagulant, and clay. Inc
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/exptsetup2.jpg?raw=true" >
 
-Figure 3: Image of the bench setup, including the modified coiled flocculator.
+Figure 4: Image of the bench setup, including the modified coiled flocculator.
 </div>
 
 The experiment setup shown models the water flow through a plant on a smaller, lab-sized scale as follows:
@@ -122,9 +138,9 @@ After each experimental trial, air bubbles were introduced into the system at 1 
 
 ### Procedure
 
-The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run three trials at each of the target turbidity (100, 80, 60, 40, and 20 NTU), starting at the highest target turbidity and ending with the lowest. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual.
+The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual.
 
-To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at each target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
+To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
 Present an observation (results), then explain what happened (analysis).  Each paragraph should focus on one aspect of your results. In that same paragraph, you should interpret that result.  

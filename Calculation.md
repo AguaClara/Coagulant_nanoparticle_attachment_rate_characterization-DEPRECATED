@@ -15,6 +15,7 @@ def laminarvelocity(r,R,v):
     laminarvelocity = v*(1-((r**2)/(R**2)))
     return laminarvelocity
     print(laminarvelocity)
+
 ```
 
 ```python
@@ -25,6 +26,7 @@ CD=24/Re
 rho=pc.density_water(293*u.degK)
 rcoagulant=(90/2)*u.nm
 veloncoag=laminarvelocity((R-rcoagulant),R,vm)
+veloncoag
 Fdrag=-(CD*np.pi*(rcoagulant**2)*rho*(veloncoag**2)/2).to_base_units()
 Fdrag
 
