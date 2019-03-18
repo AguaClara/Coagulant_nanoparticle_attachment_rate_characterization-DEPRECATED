@@ -7,8 +7,8 @@ The C-NARC subteam is investigating how the rate of attachment of coagulant nano
 * Valentine Starnes (vs344)
 
 ## Spring 2019
-* [Report]
-* [Symposium]
+* [Report](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/C-NARC%20Report%20Draft.md)
+* [Symposium](https://docs.google.com/presentation/d/1SyQCbU3cC5uNPMs2vGSnrqSDp9r_WvBaCDWNjVXa0UM/edit?usp=sharing)
 * [Final Presentation]
 
 ## Fall 2018
