@@ -81,11 +81,11 @@ Since the radius of the coagulant nanoparticle is $0.45nm$ and the radius of the
 
 The next step was to find the drag force on one coagulant nanoparticle on the tubing. First, the drag coefficient is given by:
  $$ Cd = \frac{24}{Re}$$
-where the Reynolds number is $$ Re = \frac{pvD}{μ}$$
- and p is the density, v is the velocity, D is the diameter of the tubing and μ is the dynamic viscosity. Then, the drag force is calculated by:
-$$ F_{d} = \frac {1}{2} C_{d} A pv^2$$
+where the Reynolds number is $Re = \frac{\rho vD}{μ}$
+ and $\rho$ is the density, v is the velocity, D is the diameter of the tubing and μ is the dynamic viscosity. Then, the drag force is calculated by:
+$$ F_{d} = \frac {1}{2} C_{d} A \rho v^2$$
 Given a velocity of $5.769×10^{-6} m/s$, the calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The next step was to find the headloss from one coagulant nanoparticle on the tubing. The headloss was given by the formula:
-$$ H_{L} = \frac{-F_{d}}{\pi R²pg}
+$$ H_{L} = \frac{-F_{d}}{\pi R² \rho g}
 $$
 The head loss was calculated as $5.968×10^{-21} cm$. This was compared to last semester’s results from 20 NTU. We picked the lowest NTU available because at a lower NTU, more coagulant will attach to the wall of the tubing due to less clay particles in the solution. In order to calculate the number of coagulant particles attached to the walls of the tubing, the average headloss at each pressure sensor was divided by the headloss of one coagulant particle.
 $$	Nanoparticles\:on\:wall = \frac {H_{L,avg}\:at\:one\:sensor}{H_{L}\:from\:1 \:coagulant}$$
@@ -142,7 +142,7 @@ The system was fully automated through Process Control and Data Acquisition (Pro
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
-Present an observation (results), then explain what happened (analysis).  Each paragraph should focus on one aspect of your results. In that same paragraph, you should interpret that result.  
+<!--Present an observation (results), then explain what happened (analysis).  Each paragraph should focus on one aspect of your results. In that same paragraph, you should interpret that result.  
 In other words, there should not be two distinct paragraphs, but instead one paragraph containing one result and the interpretation and analysis of this result. Here are some guiding questions for results and analysis:
 
 When describing your results, present your data, using the guidelines below:
@@ -164,7 +164,22 @@ After describing a particular result, within a paragraph, go on to connect your 
 * Why did you get those results/data?
 * Did these results line up with expectations?
 * What went wrong?
-* If the data do not support your hypothesis, is there another hypothesis that describes your new data?
+* If the data do not support your hypothesis, is there another hypothesis that describes your new data? -->
+The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but since the particle is $5*10^{4}$ times smaller than the tube radius, the result lined up with expectations. Also, low velocity matches with the hypothesis that the coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
+
+The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$.Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$. Then the team utilized the experimental results from Fall 2018 at 20NTU. Number of particles at each segmant was calculated and organized in the table below.
+
+| Segmant | Headloss Average | Number of particles on the wall |
+|:------- |:----------------:|:-------------------------------:|
+| 0       |      1.420       |        $2.379×10^{20}$         |
+| 1       |      0.736       |        $1.233×10^{20}$         |
+| 2       |      0.389       |        $6.518×10^{19}$         |
+| 3       |      0.264       |        $4.424×10^{19}$         |
+| Total        |        2.809          |  $4.707×10^{20}$    |
+
+The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles. This lined up with the expectations as well that coagulant particles should not adhere to the wall, but should adhere to the clay particles in suspension. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear suggestion about how much fraction was attaching to the wall compared to how much entered the flocculator.
+
+All calculations are compiled in Calculation.md file in the C-NARC team's repository.
 
 ## Conclusions
 The C-NARC team focused on the theoretical calculations to find the headloss from one coagulant nanoparticle attached to the walls on the flocculator for the first half of the semester. This was then compared to the average headloss from each pressure sensor to find the total number of coagulant nanoparticles on the tubing. This value is important to AguaClara in the lab because if coagulant is attaching to the walls, the rate and total amount of attachment to clay particles will be decreased. The number of coagulant nanoparticles on the walls also varies with respect to turbidity levels in which rate attachment to the walls are higher at lower NTUs. At lower turbidity levels, there are fewer clay particles in solution and therefore the coagulant will attach to the walls faster than if there were more clay particles to attach to.
