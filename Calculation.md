@@ -59,8 +59,16 @@ npwalltot
 ```
 
 ```python
-FlocSegL=(9*u.foot+9*u.inch).to(u.m)
-TotalResTime=(2.4*u.min).to(u.hr)
-SegResTime=TotalResTime/4
+FlocL=(9*u.foot+9*u.inch).to(u.m)
+volcoagtot=npwalltot*(4/3)*np.pi*(rcoagulant**3)
+surfAfloc=2*np.pi*R*FlocL
+
+coagthickness=(volcoagtot/surfAfloc).to_base_units()
+
+volcoagtot.to(u.m**3/u.hr)
+
+surfAfloc
+
+coagthickness.to(u.inch/u.hr)
 
 ```
