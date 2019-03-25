@@ -72,3 +72,29 @@ surfAfloc
 coagthickness.to(u.inch/u.hr)
 
 ```
+
+```python
+concPACl=0.1418*(u.g/u.liter)
+molarmassPACl=946.0465*(u.g/u.mol)
+molconcPACl=(concPACl/molarmassPACl)
+molconcPACl
+molarflowPACl=(molconcPACl*TubeFlow).to_base_units()
+numcoagflow=(molarflowPACl*((6.023*10**23)/u.mol)).to(1/u.hour)
+numcoagflow
+```
+
+```python
+concAl=0.1418*(u.g/u.liter)
+molarmassAl=26.981539*(u.g/u.mol)
+molconcAl=concAl/molarmassAl
+molconcAl
+molconccoag=molconcAl/10
+molarflowcoag=(molconccoag*TubeFlow).to_base_units()
+numcoagflow=(molarflowcoag*((6.023*10**23)/u.mol)).to(1/u.hour)
+numcoagflow
+numcoagflow-npwalltot
+```
+molconcAl=0.00526 mol/L
+numcoagflow=1.155*10^21 particles/hour
+npwalltot=4.71*10^20 particles/hour
+numcoagflow-npwalltot=6.84*10^20 particles/hour
