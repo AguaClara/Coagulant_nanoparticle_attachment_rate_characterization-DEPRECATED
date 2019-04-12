@@ -153,8 +153,23 @@ Figure 5: ProCoDA setup
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
-![Headloss_Graph](/Headloss_Graph.png)
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph.png?raw=true">
+
 Figure 6: Headloss change over time at 20 NTU.
+
+Slope1: 1.27980351753
+R-squared1: 0.988317997033
+
+Slope2: 0.672708901982
+R-squared2: 0.91917034778
+
+Slope3: 0.359848254207
+R-squared3: 0.983153532764
+
+Slope4: 0.233035390573
+R-squared4: 0.965547944242
 
 The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but the assumption behind the calculation was a fully developed laminar flow velocity profile assuming no-slip condition, which is that velocity is 0 at the walls of the tubing. Since the particle is $5*10^{4}$ times smaller than the tube radius, the velocity lined up with expectation that it would be close to 0. Also, low velocity matches with the hypothesis that the coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
 
@@ -180,8 +195,12 @@ In the second half of the semester, the C-NARC team will be focused on finding t
 
 ## Future Work
 Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension. The first information the team needs to find out would be how many coagulant nanoparticles there are in total in the solution so the team can eliminate the amount sticking to the wall. To do that, the team will be using the information that there is 0.1418 g/L of Al and find out the molecular formula ([Al<sub>n</sub>(OH)<sub>m</sub>Cl<sub>3n-m</sub>]<sub>x</sub>) using the known basicity (m/3n). After that, the team can use the density of Al to figure out initial volume concentration of the coagulant stock solution.
+
 After the team figures out the total number of coagulant nanoparticles in suspension and sticking to the clay, the issue the team is still having is that the team is not sure how to figure out the number of nanoparticles stuck to clay versus the number of nanoparticles in suspension.
+
 An additional challenge for the team would be figuring out how the difference in NTU affects the number of nanoparticles in the three different locations. For example, at higher NTU there would be no coagulant in suspension because the coagulant would be mainly attaching to clay.
+
+Furthermore, the team will run an additional test using only water and coagulant. While it is expected that there will be a linear change in slopes between the different sections in the flocculator, it may show a nonlinear decrease in the particles on the wall. This could be explained by the fact that some clay particles attached to coagulant are sticking to the flocculator wall together.
 
 **[Space your paragraphs properly.]**
 
