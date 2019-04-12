@@ -103,9 +103,6 @@ $$	Nanoparticles\:on\:wall = \frac {H_{L,avg}\:at\:one\:sensor}{H_{L}\:from\:1 \
 
 This equation shows the number of nanoparticles from each section of the flocculator. The total number of nanoparticles attached to the whole flocculator tubing would be the sum of each total at the four pressure sensors. The total number of coagulant nanoparticles on the whole flocculator was $4.71 * 10^{20} \frac{particles}{hour}$.
 
-
-
-
 ### Experimental Apparatus
 The Fall 2018 team conducted experiments with four different iterations of the experimental design. The three initial iterations were modified and improved upon before arriving at the current version.
 
@@ -150,63 +147,14 @@ The coiled flocculator was made of tubing wound around a cardboard tube. This wa
 After each experimental trial, air bubbles were introduced into the system at 1 rpm by the air pump. Water was also continually pumped at 76 rpm by the water pump to carry the air bubble through the flocculator. This cleaning system was used to scrape and clean any coagulant buildup on the flocculator wall in preparation for the next trial. Any fluids that entered the microbore tubing during the experiment, while the air pump was off, was contained in the 1L bottle attached to the air pump.
 
 ### Procedure
-
-The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual. **[Add image of your ProCoDA setup?]**
+The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual. **[Add image of your ProCoDA setup?]** ![ProCoDa_setup](/ProCoDa_setup.png)
+Figure 5: ProCoDA setup
 
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
-```Python
-import aguaclara.research.procoda_parser as pp
-data_path= "Data"
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-import scipy.stats as stats
-
-columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="11-11-2018", start_time="5:23", end_time="8:23")
-
-time = columns[0]
-pressure1 = columns[1]
-pressure2 = columns[2]
-pressure3 = columns[3]
-pressure4 = columns[4]
-
-elapsed_time = (np.array(time)-time[0])*24
-pressure1 = (np.array(pressure1)-pressure1[0])
-pressure2 = (np.array(pressure2)-pressure2[0])
-pressure3 = (np.array(pressure3)-pressure3[0])
-pressure4 = (np.array(pressure4)-pressure4[0])
-
-plt.xlabel("Time (hours)")
-plt.ylabel("Headloss (cm)")
-line1,=plt.plot(elapsed_time,pressure1, color="blue")
-line2,=plt.plot(elapsed_time,pressure2, color="red")
-line3,=plt.plot(elapsed_time,pressure3, color="orange")
-line4,=plt.plot(elapsed_time,pressure4, color="green")
-plt.legend((line1,line2,line3,line4),("7kPa1","7kPa2","7kPa3","7kPa4"))
-
-linreg1 = stats.linregress(elapsed_time, pressure1)
-slope1, intercept1, r_value1 = linreg1[0:3]
-linreg2 = stats.linregress(elapsed_time, pressure2)
-slope2, intercept2, r_value2 = linreg2[0:3]
-linreg3 = stats.linregress(elapsed_time, pressure3)
-slope3, intercept3, r_value3 = linreg3[0:3]
-linreg4 = stats.linregress(elapsed_time, pressure4)
-slope4, intercept4, r_value4 = linreg4[0:3]
-
-print("Slope1:", slope1)
-print("R-squared1:", r_value1 ** 2)
-print("Slope2:", slope2)
-print("R-squared2:", r_value2 ** 2)
-print("Slope3:", slope3)
-print("R-squared3:", r_value3 ** 2)
-print("Slope4:", slope4)
-print("R-squared4:", r_value4 ** 2)
-
-
-
-```
+![Headloss_Graph](/Headloss_Graph.png)
+Figure 6: Headloss change over time at 20 NTU.
 
 The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but the assumption behind the calculation was a fully developed laminar flow velocity profile assuming no-slip condition, which is that velocity is 0 at the walls of the tubing. Since the particle is $5*10^{4}$ times smaller than the tube radius, the velocity lined up with expectation that it would be close to 0. Also, low velocity matches with the hypothesis that the coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
 
@@ -223,14 +171,12 @@ Table 2: Shows the average headloss and calculated number of nanoparticles on th
 
 The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles attaching to the wall. This lined up with the expectations as well that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear relationship identified about how much fraction was attaching to the wall compared to how much entered the flocculator.
 
-All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository.
+All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository and as python codes in manual.
 
 ## Conclusions
 The C-NARC team focused on the theoretical calculations to find the headloss from one coagulant nanoparticle attached to the walls on the flocculator for the first half of the semester. This was then compared to the average headloss from each pressure sensor to find the total number of coagulant nanoparticles on the tubing. This value is important to AguaClara in the lab because if coagulant is attaching to the walls, the rate and total amount of attachment to clay particles will be decreased. The number of coagulant nanoparticles on the walls also varies with respect to turbidity levels in which rate attachment to the walls are higher at lower NTUs. At lower turbidity levels, there are fewer clay particles in solution and therefore the coagulant will attach to the walls faster than if there were more clay particles to attach to.
 
 In the second half of the semester, the C-NARC team will be focused on finding the attachment rate of coagulant nanoparticles to clay particles. This will be important in finding optimal flow rates and turbidity levels in which minimal head loss occurs so the least amount of coagulant is wasted in Aguaclara plants.
-
-
 
 ## Future Work
 Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension. The first information the team needs to find out would be how many coagulant nanoparticles there are in total in the solution so the team can eliminate the amount sticking to the wall. To do that, the team will be using the information that there is 0.1418 g/L of Al and find out the molecular formula ([Al<sub>n</sub>(OH)<sub>m</sub>Cl<sub>3n-m</sub>]<sub>x</sub>) using the known basicity (m/3n). After that, the team can use the density of Al to figure out initial volume concentration of the coagulant stock solution.
@@ -259,7 +205,7 @@ Velocity Profile for Tube Flow. (n.d.) Retrieved March 15, 2019, from http://hyp
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
-Figure 6: Experimental setup including the coiled flocculator with four attached pressure sensors.
+Figure 7: Experimental setup including the coiled flocculator with four attached pressure sensors.
 </div>
 
 
@@ -268,7 +214,7 @@ Figure 6: Experimental setup including the coiled flocculator with four attached
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/flocculator.jpg?raw=true" >
 
-Figure 7: Modified coiled flocculator with four pressure sensors attached.
+Figure 8: Modified coiled flocculator with four pressure sensors attached.
 </div>
 
 #### Materials
@@ -299,7 +245,6 @@ Figure 7: Modified coiled flocculator with four pressure sensors attached.
   - Distilled water
   - Kaolinite Clay
   - Polyaluminum chloride (PACl)
-
 
 ### Experimental Methods
 #### Set up
@@ -369,3 +314,154 @@ The state that turns off the air pump. Just water flows through the system at th
 |reps| Constant | 3 |
 |loop counter| Variable  | count states function |
 |count target| variable | multiply function |
+
+#### Graphical Data Analysis
+```Python
+import aguaclara.research.procoda_parser as pp
+data_path= "Data"
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import scipy.stats as stats
+
+columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="11-11-2018", start_time="5:23", end_time="8:23")
+
+time = columns[0]
+pressure1 = columns[1]
+pressure2 = columns[2]
+pressure3 = columns[3]
+pressure4 = columns[4]
+
+elapsed_time = (np.array(time)-time[0])*24
+pressure1 = (np.array(pressure1)-pressure1[0])
+pressure2 = (np.array(pressure2)-pressure2[0])
+pressure3 = (np.array(pressure3)-pressure3[0])
+pressure4 = (np.array(pressure4)-pressure4[0])
+
+plt.xlabel("Time (hours)")
+plt.ylabel("Headloss (cm)")
+line1,=plt.plot(elapsed_time,pressure1, color="blue")
+line2,=plt.plot(elapsed_time,pressure2, color="red")
+line3,=plt.plot(elapsed_time,pressure3, color="orange")
+line4,=plt.plot(elapsed_time,pressure4, color="green")
+plt.legend((line1,line2,line3,line4),("7kPa1","7kPa2","7kPa3","7kPa4"))
+plt.savefig('Headloss_Graph.png')
+
+linreg1 = stats.linregress(elapsed_time, pressure1)
+slope1, intercept1, r_value1 = linreg1[0:3]
+linreg2 = stats.linregress(elapsed_time, pressure2)
+slope2, intercept2, r_value2 = linreg2[0:3]
+linreg3 = stats.linregress(elapsed_time, pressure3)
+slope3, intercept3, r_value3 = linreg3[0:3]
+linreg4 = stats.linregress(elapsed_time, pressure4)
+slope4, intercept4, r_value4 = linreg4[0:3]
+
+print("Slope1:", slope1)
+print("R-squared1:", r_value1 ** 2)
+print("Slope2:", slope2)
+print("R-squared2:", r_value2 ** 2)
+print("Slope3:", slope3)
+print("R-squared3:", r_value3 ** 2)
+print("Slope4:", slope4)
+print("R-squared4:", r_value4 ** 2)
+
+```
+#### Python Calculation for Data Analysis
+```python
+import pandas as pd
+from aguaclara.core.units import unit_registry as u
+from aguaclara.core import physchem as pc
+import numpy as np
+R=((0.17/2)*u.inch).to(u.m)
+mu=pc.viscosity_dynamic(293*u.degK)
+SedTank_Flow=2*u.mm/u.second
+WaterPumpRPM=76*u.revolution/u.minute
+Size16TubingFlow=0.8*u.mL/u.revolution
+TubeFlow=(WaterPumpRPM*Size16TubingFlow).to(u.m**3/u.s)
+uavg=TubeFlow/(np.pi*R*R)
+vm=2*uavg
+def laminarvelocity(r,R,v):
+    laminarvelocity = v*(1-((r**2)/(R**2)))
+    return laminarvelocity
+    print(laminarvelocity)
+
+```
+
+```python
+Diam=2*R
+nu=pc.viscosity_kinematic(293*u.degK)
+Re=pc.re_pipe(TubeFlow, Diam, nu)
+CD=24/Re
+rho=pc.density_water(293*u.degK)
+rcoagulant=(90/2)*u.nm
+veloncoag=laminarvelocity((R-rcoagulant),R,vm)
+veloncoag
+Fdrag=-(CD*np.pi*(rcoagulant**2)*rho*(veloncoag**2)/2).to_base_units()
+Fdrag
+
+```
+
+```python
+g=9.8*u.m/(u.s**2)
+coagheadloss=(-Fdrag/(np.pi*R*R*rho*g)).to(u.centimeter)
+coagheadloss
+```
+Used headloss data at 20 NTU measured by Fall 2018.
+```python
+HLavg0=1.420*u.cm/u.hr
+HLavg1=0.736*u.cm/u.hr
+HLavg2=0.389*u.cm/u.hr
+HLavg3=0.264*u.cm/u.hr
+
+npwall0=HLavg0/coagheadloss
+npwall1=HLavg1/coagheadloss
+npwall2=HLavg2/coagheadloss
+npwall3=HLavg3/coagheadloss
+
+npwall0
+npwall1
+npwall2
+npwall3
+
+npwalltot=npwall0+npwall1+npwall2+npwall3
+npwalltot
+```
+
+```python
+FlocL=(9*u.foot+9*u.inch).to(u.m)
+volcoagtot=npwalltot*(4/3)*np.pi*(rcoagulant**3)
+surfAfloc=2*np.pi*R*FlocL
+
+coagthickness=(volcoagtot/surfAfloc).to_base_units()
+
+volcoagtot.to(u.m**3/u.hr)
+
+surfAfloc
+
+coagthickness.to(u.inch/u.hr)
+
+```
+
+```python
+concPACl=0.1418*(u.g/u.liter)
+molarmassPACl=946.0465*(u.g/u.mol)
+molconcPACl=(concPACl/molarmassPACl)
+molconcPACl
+molarflowPACl=(molconcPACl*TubeFlow).to_base_units()
+numcoagflow=(molarflowPACl*((6.023*10**23)/u.mol)).to(1/u.hour)
+numcoagflow
+```
+
+```python
+concAl=0.1418*(u.g/u.liter)
+molarmassAl=26.981539*(u.g/u.mol)
+molconcAl=concAl/molarmassAl
+molconcAl
+molconccoag=molconcAl/10
+molarflowcoag=(molconccoag*TubeFlow).to_base_units()
+numcoagflow=(molarflowcoag*((6.023*10**23)/u.mol)).to(1/u.hour)
+numcoagflow
+numcoagflow.to(1/u.second)
+
+numcoagflow-npwalltot
+```
