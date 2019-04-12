@@ -92,6 +92,8 @@ molconccoag=molconcAl/10
 molarflowcoag=(molconccoag*TubeFlow).to_base_units()
 numcoagflow=(molarflowcoag*((6.023*10**23)/u.mol)).to(1/u.hour)
 numcoagflow
+numcoagflow.to(1/u.second)
+
 numcoagflow-npwalltot
 ```
 molconcAl=0.00526 mol/L
