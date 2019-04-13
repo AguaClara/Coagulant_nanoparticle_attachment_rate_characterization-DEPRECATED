@@ -158,13 +158,14 @@ The velocity of flow at one coagulant particle adhered on the wall was calculate
 
 The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesis was that at the team's experimental setup, the velocity was slow enough not to cause the formed flocs to dissociate, consequently not to detach the coagulant particles on the wall as well. Low velocity at the the nanoparticle resulted in low drag force on the nanoparticle. The sign on the drag force was negative, because drag force against the flow. Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$ taking the size and density of the coagulant particle into account. Then the team utilized the experimental results from Fall 2018 at 20 NTU. The 20 NTU data was used not other turbidities, because the team's goal was to investigate coagulant nanoparticle attachment rate characterization rate at relatively low turbidity, which would better represent an actual plant NTU on normal days. Number of particles at each segment was calculated and organized in the table below.
 **[Label tables.]**
-| Segment | Headloss Average | Number of nanoparticles on the wall |
-|:------- |:----------------:|:-------------------------------:|
-| 0       |      1.420       |        $2.379×10^{20}$         |
-| 1       |      0.736       |        $1.233×10^{20}$         |
-| 2       |      0.389       |        $6.518×10^{19}$         |
-| 3       |      0.264       |        $4.424×10^{19}$         |
-| Total        |        2.809          |  $4.707×10^{20}$    |
+
+| Segment |  Headloss Average   | Number of nanoparticles on the wall |
+|:------- |:--------:|:-----:|
+| 0  |  1.420  |$2.379×10^{20}$ |
+| 1  |  0.736 | $1.233×10^{20}$|
+| 2  |  0.389    | $6.518×10^{19}$ |
+| 3  | 0.264    | $4.424×10^{19}$|
+| Total  |  2.809   | $4.707×10^{20}$|
 
 Table 2: Shows the average headloss and calculated number of nanoparticles on the flocculator wall.
 
