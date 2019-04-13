@@ -159,6 +159,18 @@ src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_charac
 
 Figure 6: Headloss change over time at 20 NTU.
 
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
+
+Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
+
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
+
+Figure 8: Total Headloss change in flocculator over time at 20 NTU.
+
 Slope1: 1.27980351753
 R-squared1: 0.988317997033
 
@@ -384,7 +396,21 @@ print("R-squared3:", r_value3 ** 2)
 print("Slope4:", slope4)
 print("R-squared4:", r_value4 ** 2)
 
+
+plt.xlabel("Position in flocculator")
+plt.ylabel("Headloss increase rate (cm/hr)")
+lines=plt.plot([1,2,3,4],[slope1,slope2,slope3,slope4], 'o')
+plt.legend((lines),("20 NTU"))
+plt.savefig('Headloss_Rate_Graph.png')
+
+pressuretot=pressure1+pressure2+pressure3+pressure4
+plt.xlabel("Time (hours)")
+plt.ylabel("Headloss (cm)")
+linetot=plt.plot(elapsed_time,pressuretot, color="blue")
+plt.legend((linetot),("7kPa"))
+plt.savefig('Total_Headloss_Graph.png')
 ```
+
 #### Python Calculation for Data Analysis
 ```python
 import pandas as pd
