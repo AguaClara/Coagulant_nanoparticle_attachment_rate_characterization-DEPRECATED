@@ -153,36 +153,6 @@ Figure 5: ProCoDA setup
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turibidity. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
-<img
-align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph.png?raw=true">
-
-Figure 6: Headloss change over time at 20 NTU.
-
-<img
-align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
-
-Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
-
-<img
-align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
-
-Figure 8: Total Headloss change in flocculator over time at 20 NTU.
-
-Slope1: 1.27980351753
-R-squared1: 0.988317997033
-
-Slope2: 0.672708901982
-R-squared2: 0.91917034778
-
-Slope3: 0.359848254207
-R-squared3: 0.983153532764
-
-Slope4: 0.233035390573
-R-squared4: 0.965547944242
-
 The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but the assumption behind the calculation was a fully developed laminar flow velocity profile assuming no-slip condition, which is that velocity is 0 at the walls of the tubing. Since the particle is $5*10^{4}$ times smaller than the tube radius, the velocity lined up with expectation that it would be close to 0. Also, low velocity matches with the hypothesis that the coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
 
 The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesis was that at the team's experimental setup, the velocity was slow enough not to cause the formed flocs to dissociate, consequently not to detach the coagulant particles on the wall as well. Low velocity at the the nanoparticle resulted in low drag force on the nanoparticle. The sign on the drag force was negative, because drag force against the flow. Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$ taking the size and density of the coagulant particle into account. Then the team utilized the experimental results from Fall 2018 at 20 NTU. The 20 NTU data was used not other turbidities, because the team's goal was to investigate coagulant nanoparticle attachment rate characterization rate at relatively low turbidity, which would better represent an actual plant NTU on normal days. Number of particles at each segment was calculated and organized in the table below.
@@ -196,7 +166,26 @@ The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesi
 | Total        |        2.809          |  $4.707×10^{20}$    |
 Table 2: Shows the average headloss and calculated number of nanoparticles on the flocculator wall.
 
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph.png?raw=true">
+Figure 6: Headloss change over time at 20 NTU.
+
 The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles attaching to the wall. This lined up with the expectations as well that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear relationship identified about how much fraction was attaching to the wall compared to how much entered the flocculator.
+
+The position in the flocculator and headloss increase rate were plotted to identify the relationship.
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
+Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
+
+As shown in the graph, although the segments of the flocculator have equal length, the rate did not decrease linearly. The assumption was that the rate of headloss increase will linearly decrease as going through the flocculator, because there will be less particles to attach to the walls of the flocculator. The reason might be that there was an unknown relationship between headloss and position in the flocculator.
+
+However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear.
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
+Figure 8: Total Headloss change in flocculator over time at 20 NTU.
 
 All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository and as python codes in manual.
 
@@ -236,7 +225,7 @@ Velocity Profile for Tube Flow. (n.d.) Retrieved March 15, 2019, from http://hyp
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
-Figure 7: Experimental setup including the coiled flocculator with four attached pressure sensors.
+Figure 9: Experimental setup including the coiled flocculator with four attached pressure sensors.
 </div>
 
 
@@ -245,7 +234,7 @@ Figure 7: Experimental setup including the coiled flocculator with four attached
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/flocculator.jpg?raw=true" >
 
-Figure 8: Modified coiled flocculator with four pressure sensors attached.
+Figure 10: Modified coiled flocculator with four pressure sensors attached.
 </div>
 
 #### Materials
@@ -400,14 +389,12 @@ print("R-squared4:", r_value4 ** 2)
 plt.xlabel("Position in flocculator")
 plt.ylabel("Headloss increase rate (cm/hr)")
 lines=plt.plot([1,2,3,4],[slope1,slope2,slope3,slope4], 'o')
-plt.legend((lines),("20 NTU"))
 plt.savefig('Headloss_Rate_Graph.png')
 
 pressuretot=pressure1+pressure2+pressure3+pressure4
 plt.xlabel("Time (hours)")
 plt.ylabel("Headloss (cm)")
 linetot=plt.plot(elapsed_time,pressuretot, color="blue")
-plt.legend((linetot),("7kPa"))
 plt.savefig('Total_Headloss_Graph.png')
 ```
 
