@@ -73,7 +73,8 @@ Before performing any experiments, the C-NARC team used Python to carry out theo
 | g| Gravitational constant | $9.8 \frac {m}{s^2}$ |
 | r| Distance from the center of the nanoparticle to the middle to the tube| $0.002134 m$|
 | $V_{f}$| Volumetric Flow in size 16 tubing per revolution | $0.8 \frac{mL}{rev}$ |
- Table 1: Shows the list of constants used in various calculations to find the number of coagulant particles on the flocculator wall.
+
+Table 1: Shows the list of constants used in various calculations to find the number of coagulant particles on the flocculator wall.
 
 The initial goal was to calculate the velocity at the center of one coagulant nanoparticle on the wall of the tubing. The first step towards this was to find the flow of the solution through the tubing. The water pump was set to turn 76 revolutions per minute and peristaltic pump tubing size 16 allows 0.8 mL of solution per revolution. The formula for the tube flow is given below:
 $$ Tube Flow = RPM * V_{f}$$
@@ -164,6 +165,7 @@ The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesi
 | 2       |      0.389       |        $6.518×10^{19}$         |
 | 3       |      0.264       |        $4.424×10^{19}$         |
 | Total        |        2.809          |  $4.707×10^{20}$    |
+
 Table 2: Shows the average headloss and calculated number of nanoparticles on the flocculator wall.
 
 <img
