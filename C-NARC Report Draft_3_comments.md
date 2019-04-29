@@ -347,7 +347,8 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 
-columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="4-22-2019", start_time="3:58", end_time="6:56")
+columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="4-22-2019", start_time="15:58", end_time="18:50")
+
 
 time = columns[0]
 pressure1 = columns[1]
@@ -358,8 +359,8 @@ pressure4 = columns[4]
 elapsed_time = (np.array(time)-time[0])*24
 pressure1 = (np.array(pressure1)-pressure1[0])
 pressure2 = (np.array(pressure2)-pressure2[0])
-pressure3 = (np.array(pressure3)-pressure3[0])
-pressure4 = (np.array(pressure4)-pressure4[0])
+pressure3 = -(np.array(pressure3)-pressure3[0])
+pressure4 = -(np.array(pressure4)-pressure4[0])
 
 plt.xlabel("Time (hours)")
 plt.ylabel("Headloss (cm)")
