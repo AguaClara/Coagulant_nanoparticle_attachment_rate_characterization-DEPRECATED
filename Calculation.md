@@ -39,10 +39,10 @@ coagheadloss
 ```
 Used headloss data at 20NTU measured by Fall 2018.
 ```python
-HLavg0=1.420*u.cm/u.hr
-HLavg1=0.736*u.cm/u.hr
-HLavg2=0.389*u.cm/u.hr
-HLavg3=0.264*u.cm/u.hr
+HLavg0=1.260*u.cm/u.hr
+HLavg1=0.728*u.cm/u.hr
+HLavg2=0.353*u.cm/u.hr
+HLavg3=0.243*u.cm/u.hr
 
 npwall0=HLavg0/coagheadloss
 npwall1=HLavg1/coagheadloss
