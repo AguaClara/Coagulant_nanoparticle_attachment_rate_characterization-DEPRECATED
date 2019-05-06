@@ -156,9 +156,9 @@ Figure 5: ProCoDA setup
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turbidity **[turbidity-AddressedAL]**. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
 ## Results and Analysis
-The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but the assumption behind the calculation was a fully developed laminar flow velocity profile assuming no-slip condition, which is that velocity is 0 at the walls of the tubing. Since the particle is $5*10^{4}$ times smaller than the tube radius, the velocity lined up with expectation that it would be close to 0. Also, **[the]** low velocity **[value]** matches with the hypothesis that the  coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
+The velocity of flow at one coagulant particle adhered on the wall was calculated to be $5.769×10^{-6} m/s$. Compared to the maximum velocity in the velocity profile, the velocity seemed too low, but the assumption behind the calculation was a fully developed laminar flow velocity profile assuming no-slip condition, which is that velocity is 0 at the walls of the tubing. Since the particle is $5*10^{4}$ times smaller than the tube radius, the velocity lined up with expectation that it would be close to 0. Also, the **[the-AddressedAL]** low velocity value **[value-AddressedAL]** matches with the hypothesis that the  coagulant nanoparticles would not detach from the wall due to the flow. If the particles detach from the wall, then there would have been no headloss due to the coagulant particles on the wall.
 
-The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesis was that at the team's experimental setup, the velocity was slow enough not to cause the formed flocs to dissociate, **[and]** consequently not to detach the coagulant particles on the wall ~~as well~~. Low velocity at ~~the~~ the nanoparticle resulted in low drag force on the nanoparticle. The sign on the drag force was negative, because drag force against the flow. Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$ taking the size and density of the coagulant particle into account. Then the team utilized the experimental results from Fall 2018 at 20 NTU. The 20 NTU data was used not other turbidities, because the team's goal was to investigate coagulant nanoparticle attachment rate characterization rate at relatively low turbidity, which would better represent an actual plant NTU on normal days. Number of particles at each segment was calculated and organized in the table below.
+The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesis was that at the team's experimental setup, the velocity was slow enough not to cause the formed flocs to dissociate, and **[and-AddressedAL]** consequently not to detach the coagulant particles on the wall ~~as well~~. Low velocity at ~~the~~ the nanoparticle resulted in low drag force on the nanoparticle. The sign on the drag force was negative, because drag force against the flow. Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$ taking the size and density of the coagulant particle into account. Then the team utilized the experimental results from Fall 2018 at 20 NTU. The 20 NTU data was used not other turbidities, because the team's goal was to investigate coagulant nanoparticle attachment rate characterization rate at relatively low turbidity, which would better represent an actual plant NTU on normal days. Number of particles at each segment was calculated and organized in the table below.
 
 | Segment |  Headloss Average   | Number of nanoparticles on the wall |
 |:------- |:--------:|:-----:|
@@ -202,11 +202,11 @@ The C-NARC team focused on the theoretical calculations to find the headloss fro
 In the second half of the semester, the C-NARC team will be focused on finding the attachment rate of coagulant nanoparticles to clay particles. This will be important in finding optimal flow rates and turbidity levels in which minimal head loss occurs so the least amount of coagulant is wasted in Aguaclara plants.
 
 ## Future Work
-Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension. The first information the team needs to find out would be how many coagulant nanoparticles there are in total in the solution so the team can eliminate the amount sticking to the wall. To do that, the team will be using the information that there is 0.1418 g/L of Al and find out the molecular formula ([Al<sub>n</sub>(OH)<sub>m</sub>Cl<sub>3n-m</sub>]<sub>x</sub>) using the known basicity (m/3n). After that, the team can use the density of Al to figure out initial volume concentration of the coagulant stock solution.
+Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension.
 
-After the team figures out the total number of coagulant nanoparticles in suspension and ~~sticking~~ **[stuck]** to the clay, the issue the team **[has]** ~~is still having~~ is that the team is not sure how to figure out the number of nanoparticles stuck to clay versus the number of nanoparticles in suspension.
+After the team figures out the total number of coagulant nanoparticles in suspension and stuck **[stuck-AddressedAL]** to the clay, the issue the team **[has-AddressedAL]** has is that the team is not sure how to figure out the number of nanoparticles stuck to clay versus the number of nanoparticles in suspension.
 
-An additional challenge for the team would be figuring out how the difference in NTU affects the number of nanoparticles in the three different locations **[Why at the 3 different locations? It isn't clear from the next sentence that NTU would affect the three locations differently, since it seems to apply universally. And is the next sentence a valid assumption or something that is just used as an example that may not be true?]**. For example, at higher NTU there would be no coagulant in suspension because the coagulant would be mainly attaching to clay.
+An additional challenge for the team would be figuring out how the difference in NTU affects the number of nanoparticles in the three different locations **[Why at the 3 different locations? It isn't clear from the next sentence that NTU would affect the three locations differently, since it seems to apply universally. And is the next sentence a valid assumption or something that is just used as an example that may not be true?-AddressedAL]**. For example, at higher NTU there would be less coagulant in suspension and on the flocculator wall because there are more clay particles for the coagulant nanoparticles to attach to.
 
 Furthermore, the team will run an additional test using only water and coagulant. While it is expected that there will be a linear change in slopes between the different sections in the flocculator, it may show a nonlinear decrease in the particles on the wall. This could be explained by the fact that some clay particles attached to coagulant are sticking to the flocculator wall together.
 
@@ -222,7 +222,7 @@ Kinetic Energy of Tube Flow. (n.d.). Retrieved February 22, 2019, from http://hy
 Velocity Profile for Tube Flow. (n.d.) Retrieved March 15, 2019, from http://hyperphysics.phy-astr.gsu.edu/hbase/pfric2.html
 
 ## Manual
-**[Label this section as the "Manual"]**
+**[Label this section as the "Manual"-AddressedAL]**
 ### Experimental Apparatus
 
 <div style = "text-align:center">
@@ -349,7 +349,7 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 
-columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="4-22-2019", start_time="15:58", end_time="18:50")
+columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="5-2-2019", start_time="13:30", end_time="17:22")
 
 
 time = columns[0]
@@ -360,7 +360,7 @@ pressure4 = columns[4]
 
 elapsed_time = (np.array(time)-time[0])*24
 pressure1 = (np.array(pressure1)-pressure1[0])
-pressure2 = (np.array(pressure2)-pressure2[0])
+pressure2 = -(np.array(pressure2)-pressure2[0])
 pressure3 = -(np.array(pressure3)-pressure3[0])
 pressure4 = -(np.array(pressure4)-pressure4[0])
 
