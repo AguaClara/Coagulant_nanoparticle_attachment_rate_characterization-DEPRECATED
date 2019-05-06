@@ -1,0 +1,31 @@
+Day fraction since midnight on 11/28/2018	 State ID	 State name	 Rule that caused previous state to end
+0.08276730	4	Cleaning (air)	Experiment
+0.09711987	5	Cleaning (water)	Bubble
+0.10059254	1	ON	Clean water
+0.10070885	2	PID Control	Mixing
+0.11112600	3	Experiment	Clay 
+0.23612680	4	Cleaning (air)	Experiment
+0.25047967	5	Cleaning (water)	Bubble
+0.25395274	1	ON	Clean water
+0.25406936	2	PID Control	Mixing
+0.26448708	3	Experiment	Clay 
+0.38948765	4	Cleaning (air)	Experiment
+0.40384008	5	Cleaning (water)	Bubble
+0.40731317	1	ON	Clean water
+0.40742965	2	PID Control	Mixing
+0.41784691	3	Experiment	Clay 
+0.54284752	4	Cleaning (air)	Experiment
+0.55720016	5	Cleaning (water)	Bubble
+0.56067290	1	ON	Clean water
+0.56078912	2	PID Control	Mixing
+0.57120647	3	Experiment	Clay 
+0.69620712	4	Cleaning (air)	Experiment
+0.71055952	5	Cleaning (water)	Bubble
+0.71403238	1	ON	Clean water
+0.71414902	2	PID Control	Mixing
+0.72456610	3	Experiment	Clay 
+0.84956665	4	Cleaning (air)	Experiment
+0.86391915	5	Cleaning (water)	Bubble
+0.86739198	1	ON	Clean water
+0.86750860	2	PID Control	Mixing
+0.87792612	3	Experiment	Clay 
