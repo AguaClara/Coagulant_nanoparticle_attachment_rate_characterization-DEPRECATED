@@ -1,6 +1,6 @@
 # Coagulant-Nanoparticle Attachment Rate Characterization, Spring 2019
 #### Ada Lian, Valentine Starnes, Yeonjin Yun
-#### March 15, 2019
+#### May 10th, 2019
 
 **[Felix: Hello! I will be making comments in these bolded square brackets.]**
 
@@ -84,8 +84,6 @@ $$ Tube Flow = RPM * V_{f}$$
 Therefore, the tube flow represents the amount of solution per time that has flowed through the tube. The mean velocity is then calculated from the tube flow divided by the cross sectional area of the tubing.
  $$u_{m} = \frac{TubeFlow}{\pi R²}$$
 
-<!-- Next, given that μ is the dynamic viscosity, the pressure gradient is found by the following formula:$$ \frac{ΔP}{ΔX} = \frac {8μU_{m}}{R²} $$ -->
-<!-- This pressure gradient represents how the pressure will vary within the tubing due to viscosity, velocity and radius. -->
 This mean velocity represents the average velocity of one coagulant nanoparticle flowing through the tube. Finally, the maximum velocity in fully developed velocity profile is given by the following formula:
 $$ v_{m} = 2u_{m} $$
 
@@ -101,10 +99,10 @@ $$ F_{d} = \frac {1}{2} C_{d} A \rho v^2$$
 Given a velocity of $5.769×10^{-6} m/s$, the calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The next step was to find the headloss from one coagulant nanoparticle on the tubing. The headloss was given by the formula:
 $$ H_{L} = \frac{-F_{d}}{\pi R² \rho g}
 $$
-The head loss was calculated as $5.968×10^{-21} cm$. This was compared to last semester’s results from 20 NTU.  Last semester’s hypothesis was that more coagulant will attach to the wall of the tubing due to less clay particles in the solution. Since the second and third pressure sensor had the expected inverse relationship, we picked the lowest NTU available (Sausele & Shah, 2018). In order to calculate the number of coagulant particles attached to the walls of the tubing, the average headloss at each pressure sensor was divided by the headloss of one coagulant particle.
+The head loss was calculated as $5.968×10^{-21} cm$. This was compared to last semester’s results from 20 NTU.  Last semester’s hypothesis was that more coagulant will attach to the wall of the tubing due to less clay particles in the solution. Since the second and third pressure sensor had the expected inverse relationship, we picked the lowest NTU available (Sausele & Shah, 2018). The data from 2 separate experiments ran at 20 NTU were averaged to give $H_{L,avg}$. In order to calculate the number of coagulant particles attached to the walls of the tubing, the average headloss at each pressure sensor was divided by the headloss of one coagulant particle obtained from above calculations.
 $$	Nanoparticles\:on\:wall = \frac {H_{L,avg}\:at\:one\:sensor}{H_{L}\:from\:1 \:coagulant}$$
 
-**[Is H_L,avg and H_L the same? Use one or the other if this is the case]**
+**[Is H_L,avg and H_L the same? Use one or the other if this is the case-AddressedVS]**
 
 This equation shows the number of nanoparticles from each section of the flocculator. The total number of nanoparticles attached to the whole flocculator tubing would be the sum of each total at the four pressure sensors. The total number of coagulant nanoparticles on the whole flocculator was $4.71 * 10^{20} \frac{particles}{hour}$.
 
@@ -118,7 +116,7 @@ The experimental setup, shown in Figure 3 and Figure 4, included the following: 
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
-Figure 3: Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup was the coiled flocculator with four attached pressure sensors.
+**Figure 3: Experimental setup showing the flow of water, coagulant, and clay. Included in the experimental setup was the coiled flocculator with four attached pressure sensors.**
 </div>
 
 <div style = "text-align:center">
@@ -126,7 +124,7 @@ Figure 3: Experimental setup showing the flow of water, coagulant, and clay. Inc
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/exptsetup2.jpg?raw=true" >
 
-Figure 4: Image of the bench setup, including the modified coiled flocculator.
+**Figure 4: Image of the bench setup, including the modified coiled flocculator.**
 </div>
 
 The experiment setup shown models the water flow through a plant on a smaller, lab-sized scale as follows:
@@ -151,7 +149,7 @@ After each experimental trial, air bubbles were introduced into the system at 1 
 
 ### Procedure
 The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual. ![ProCoDa_setup](/ProCoDa_setup.png)
-Figure 5: ProCoDA setup
+**Figure 5: ProCoDA setup**
 
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turbidity **[turbidity-AddressedAL]**. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
@@ -160,46 +158,47 @@ The velocity of flow at one coagulant particle adhered on the wall was calculate
 
 The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesis was that at the team's experimental setup, the velocity was slow enough not to cause the formed flocs to dissociate, and **[and-AddressedAL]** consequently not to detach the coagulant particles on the wall ~~as well~~. Low velocity at ~~the~~ the nanoparticle resulted in low drag force on the nanoparticle. The sign on the drag force was negative, because drag force against the flow. Then the headloss caused by one coagulant particle on the wall was calculated to be $5.968×10^{-21} cm$ taking the size and density of the coagulant particle into account. Then the team utilized the experimental results from Fall 2018 at 20 NTU. The 20 NTU data was used not other turbidities, because the team's goal was to investigate coagulant nanoparticle attachment rate characterization rate at relatively low turbidity, which would better represent an actual plant NTU on normal days. Number of particles at each segment was calculated and organized in the table below.
 
-| Segment |  Headloss Average   | Number of nanoparticles on the wall |
+| Segment |  Total Headloss in segmant Average over 2 experiments/hour [cm/hr]   | Number of nanoparticles on the wall |
 |:------- |:--------:|:-----:|
-| 0  |  1.420  |$2.379×10^{20}$ |
-| 1  |  0.736 | $1.233×10^{20}$|
-| 2  |  0.389    | $6.518×10^{19}$ |
-| 3  | 0.264    | $4.424×10^{19}$|
-| Total  |  2.809   | $4.707×10^{20}$|
+| 0  |  1.260  |$2.111×10^{20}$ |
+| 1  |  0.728 | $1.220×10^{20}$|
+| 2  |  0.353    | $5.915×10^{19}$ |
+| 3  | 0.243    | $4.072×10^{19}$|
+| Total  |  2.584   | $4.330×10^{20}$|
 
-Table 2: Shows the average headloss and calculated number of nanoparticles on the flocculator wall.
+**Table 2: Shows the average headloss and calculated number of nanoparticles on the flocculator wall.**
 
-**[Table requires units for headloss avg! Perhaps use the full name of average headloss per nanoparticle or average headloss for one nanoparticle]**
+**[Table requires units for headloss avg! Perhaps use the full name of average headloss per nanoparticle or average headloss for one nanoparticle_AddressedYY]**
 
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph.png?raw=true">
-Figure 6: Headloss change over time at 20 NTU.
+**Figure 6: Headloss change over time at 20 NTU.**
 
-The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles attaching to the wall. This **[also]** lined up with the expectations ~~as well~~ that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear relationship identified about how much fraction was attaching to the wall compared to how much entered the flocculator.
+The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles attaching to the wall. This also **[also_addressedYY]** lined up with the expectations ~~as well~~ that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear relationship identified about how much fraction was attaching to the wall compared to how much entered the flocculator.
 
 The position in the flocculator and headloss increase rate were plotted to identify the relationship.
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
-Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
+**Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.**
 
 As shown in the graph, although the segments of the flocculator have equal length, the rate did not decrease linearly. The assumption was that the rate of headloss increase will linearly decrease as going through the flocculator, because there will be less particles to attach to the walls of the flocculator. The reason might be that there was an unknown relationship between headloss and position in the flocculator.
 
-However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear. **[If this confirms your original assumption that rate of headloss increase will linearly decrease then you should state that explicitly, because the last figure seems to contradict that assumption! If I don't know what I'm talking about just ignore this haha.x ]**
+However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear.
+**[If this confirms your original assumption that rate of headloss increase will linearly decrease then you should state that explicitly, because the last figure seems to contradict that assumption! If I don't know what I'm talking about just ignore this haha.x _addressedYY]**
 
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
-Figure 8: Total Headloss change in flocculator over time at 20 NTU.
+**Figure 8: Total Headloss change in flocculator over time at 20 NTU.**
 
 All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository and as python codes in manual.
 
 ## Conclusions
-The C-NARC team focused on the theoretical calculations to find the headloss from one coagulant nanoparticle attached to the walls on the flocculator for the first half of the semester. This was then compared to the average headloss from each pressure sensor to find the total number of coagulant nanoparticles on the tubing. This value is important to AguaClara in the lab because if coagulant is attaching to the walls, the rate and total amount of attachment to clay particles will be decreased. The number of coagulant nanoparticles on the walls also varies with respect to turbidity levels in which rate attachment to the walls are higher at lower NTUs. **[This is because]** At lower turbidity levels, there are fewer clay particles in solution and therefore the coagulant will attach to the walls faster than if there were more clay particles to attach to.
+The C-NARC team focused on the theoretical calculations to find the headloss from one coagulant nanoparticle attached to the walls on the flocculator for the first half of the semester. This was then compared to the average headloss from each pressure sensor to find the total number of coagulant nanoparticles on the tubing. This value is important to AguaClara in the lab because if coagulant is attaching to the walls, the rate and total amount of attachment to clay particles will be decreased. The number of coagulant nanoparticles on the walls also varies with respect to turbidity levels in which rate attachment to the walls are higher at lower NTUs. **[This is because_addressedYY]** This is because at lower turbidity levels, there are fewer clay particles in solution and therefore the coagulant will attach to the walls faster than if there were more clay particles to attach to.
 
-In the second half of the semester, the C-NARC team will be focused on finding the attachment rate of coagulant nanoparticles to clay particles. This will be important in finding optimal flow rates and turbidity levels in which minimal head loss occurs so the least amount of coagulant is wasted in Aguaclara plants.
+In the second half of the semester, the C-NARC team will be focused on finding the attachment rate of coagulant nanoparticles to clay particles. This will be important in finding optimal flow rates and turbidity levels in which minimal head loss occurs so the least amount of coagulant is wasted in AguaClara plants.
 
 ## Future Work
 Currently, the team was able to find out the number of nanoparticles sticking to the flocculator wall, however, the team still needs to figure out the number of nanoparticles sticking to clay and in suspension.
@@ -208,14 +207,12 @@ Although the team figured out the total number of coagulant nanoparticles in sus
 
 An additional challenge for the future team has would be figuring out how the difference in NTU affects the number of nanoparticles in the three different locations **[Why at the 3 different locations? It isn't clear from the next sentence that NTU would affect the three locations differently, since it seems to apply universally. And is the next sentence a valid assumption or something that is just used as an example that may not be true?-AddressedAL]**. For example, at higher NTU there would be less coagulant in suspension and on the flocculator wall because there are more clay particles for the coagulant nanoparticles to attach to.
 
-Furthermore, it would be interesting to see the data on experiments with only water and coagulant. While it is expected that there will be a linear change in slopes between the different sections in the flocculator, it may show a nonlinear decrease in the particles on the wall. This could be explained by the fact that some clay particles attached to coagulant are sticking to the flocculator wall together. Additionally, before running any additional experiments, it is important to calibrate the pressure sensors to ensure that the experimental data is accurate. 
-
-
+Furthermore, it would be interesting to see the data on experiments with only water and coagulant. While it is expected that there will be a linear change in slopes between the different sections in the flocculator, it may show a nonlinear decrease in the particles on the wall. This could be explained by the fact that some clay particles attached to coagulant are sticking to the flocculator wall together. Additionally, before running any additional experiments, it is important to calibrate the pressure sensors to ensure that the experimental data is accurate.
 
 ## References
 Gebbie, P. (2006). An Operator's Guide to Water Treatment Coagulants [PDF file]. Retrieved from http://wioa.org.au/conference_papers/06_qld/documents/PeterGebbie.pdf
 
-Weber-Shirk, M., Guzman, J., O'Connor, C., Pennock, W., Lion, L. & Du, Y. (2018). *Aguaclara Textbook*. Retrieved from https://aguaclara.github.io/Textbook/index.html.
+Weber-Shirk, M., Guzman, J., O'Connor, C., Pennock, W., Lion, L. & Du, Y. (2018). *AguaClara Textbook*. Retrieved from https://aguaclara.github.io/Textbook/index.html.
 
 Sausele D., Shah, M., (2018). Coagulant Nanoparticle Attachment Rate Characterization, Fall 2018 Retrieved from https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/C-NARC%20Report.md
 
@@ -232,7 +229,7 @@ Velocity Profile for Tube Flow. (n.d.) Retrieved March 15, 2019, from http://hyp
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/Exptsetup.jpg?raw=true" >
 
-Figure 9: Experimental setup including the coiled flocculator with four attached pressure sensors.
+**Figure 9: Experimental setup including the coiled flocculator with four attached pressure sensors.**
 </div>
 
 
@@ -241,7 +238,7 @@ Figure 9: Experimental setup including the coiled flocculator with four attached
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Images/flocculator.jpg?raw=true" >
 
-Figure 10: Modified coiled flocculator with four pressure sensors attached.
+**Figure 10: Modified coiled flocculator with four pressure sensors attached.**
 </div>
 
 #### Materials
@@ -351,20 +348,27 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 
-columns = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="5-2-2019", start_time="13:30", end_time="17:22")
+columns1 = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="11-28-2018", start_time="13:49", end_time="16:42")
 
+time1 = columns1[0]
+pressure11 = columns1[1]
+pressure12 = columns1[2]
+pressure13 = columns1[3]
+pressure14 = columns1[4]
 
-time = columns[0]
-pressure1 = columns[1]
-pressure2 = columns[2]
-pressure3 = columns[3]
-pressure4 = columns[4]
+columns2 = pp.get_data_by_time(path=data_path, columns=[0,1,2,3,4], start_date="11-28-2018", start_time="13:49", end_time="16:42")
 
-elapsed_time = (np.array(time)-time[0])*24
-pressure1 = (np.array(pressure1)-pressure1[0])
-pressure2 = -(np.array(pressure2)-pressure2[0])
-pressure3 = -(np.array(pressure3)-pressure3[0])
-pressure4 = -(np.array(pressure4)-pressure4[0])
+time2 = columns2[0]
+pressure21 = columns2[1]
+pressure22 = columns2[2]
+pressure23 = columns2[3]
+pressure24 = columns2[4]
+
+elapsed_time = ((np.array(time1)-time1[0])+(np.array(time2)-time2[0]))*24/2
+pressure1 = ((np.array(pressure11)-pressure11[0])+(np.array(pressure21)-pressure21[0]))/2
+pressure2 = ((np.array(pressure12)-pressure12[0])+(np.array(pressure22)-pressure22[0]))/2
+pressure3 = ((np.array(pressure13)-pressure13[0])+(np.array(pressure23)-pressure23[0]))/2
+pressure4 = ((np.array(pressure14)-pressure14[0])+(np.array(pressure24)-pressure24[0]))/2
 
 plt.xlabel("Time (hours)")
 plt.ylabel("Headloss (cm)")
@@ -373,7 +377,8 @@ line2,=plt.plot(elapsed_time,pressure2, color="red")
 line3,=plt.plot(elapsed_time,pressure3, color="orange")
 line4,=plt.plot(elapsed_time,pressure4, color="green")
 plt.legend((line1,line2,line3,line4),("7kPa1","7kPa2","7kPa3","7kPa4"))
-plt.savefig('Headloss_Graph.png')
+plt.title('Headloss over Time 2 Trials Averaged')
+plt.savefig('Headloss_Graph_fin.png')
 
 linreg1 = stats.linregress(elapsed_time, pressure1)
 slope1, intercept1, r_value1 = linreg1[0:3]
@@ -397,12 +402,14 @@ print("R-squared4:", r_value4 ** 2)
 plt.xlabel("Position in flocculator")
 plt.ylabel("Headloss increase rate (cm/hr)")
 lines=plt.plot([1,2,3,4],[slope1,slope2,slope3,slope4], 'o')
+plt.title('Headloss increase rate throughout the flocculator')
 plt.savefig('Headloss_Rate_Graph.png')
 
 pressuretot=pressure1+pressure2+pressure3+pressure4
 plt.xlabel("Time (hours)")
 plt.ylabel("Headloss (cm)")
 linetot=plt.plot(elapsed_time,pressuretot, color="blue")
+plt.title('Total Headloss change over entire flocculator')
 plt.savefig('Total_Headloss_Graph.png')
 ```
 
