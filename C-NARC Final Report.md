@@ -172,10 +172,11 @@ The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesi
 
 <img
 align = "center"
-src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph.png?raw=true">
-**Figure 6: Headloss change over time at 20 NTU.**
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph_fin.png?raw=true">
+**Figure 6: Headloss change over time at 20 NTU, 2 Trials averaged.**
 
-The total number of particles on the wall throughout the entire flocculator was calculated to be $4.707 * 10^{20} \frac{particles}{hour}$. The number seemed huge, but this was number of particles not number of moles of particles, so it was actually less than 1 mol of coagulant nanoparticles attaching to the wall. This also **[also_addressedYY]** lined up with the expectations ~~as well~~ that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, it was still unclear how many coagulant particles are in suspension or are attached to the clay particles, so there was no clear relationship identified about how much fraction was attaching to the wall compared to how much entered the flocculator.
+The total number of particles on the wall throughout the entire flocculator was calculated to be $4.330 * 10^{20} \frac{particles}{hour}$. To explicitly compare, the number of particles in the initial inflow was calculated. In order to calculate that number, molecular formula of the coagulant was found to be $\left  [ Al_{10}\left ( OH \right )_ {21} Cl_{\left ( 3n-m \right )} \right ]_ {x}$ using the basicity value of 0.7, which is the basicity of coagulant used in Ithaca water plant and aguaclara lab. m and n could be varied, but in our calculation, n value of 10 was used. The concentration of Aluminum in stock is calculated from the concentration of aluminum in stock solution. From that, number of coagulant particles in inflow was calculated to be $1.155 * 10^{21} \frac{particles}{hour}$ based on tube flow.
+ This also **[also_addressedYY]** lined up with the expectations that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, there was no clear distinction identified between particles in suspension and particles attached to the clay particles.
 
 The position in the flocculator and headloss increase rate were plotted to identify the relationship.
 <img
@@ -489,14 +490,13 @@ coagthickness.to(u.inch/u.hr)
 
 ```
 
-```python
-concPACl=0.1418*(u.g/u.liter)
-molarmassPACl=946.0465*(u.g/u.mol)
-molconcPACl=(concPACl/molarmassPACl)
-molconcPACl
-molarflowPACl=(molconcPACl*TubeFlow).to_base_units()
-numcoagflow=(molarflowPACl*((6.023*10**23)/u.mol)).to(1/u.hour)
-numcoagflow
+$$Molecular\ Formula\ of\ coagulant = \left  [ Al_{n}\left ( OH \right )_ {m} Cl_{\left ( 3n-m \right )} \right ]_ {x}$$
+```Python
+basicity=0.7
+basicity=m/3n
+assumption
+n=10
+m=basicity*3*n
 ```
 
 ```python
@@ -512,3 +512,7 @@ numcoagflow.to(1/u.second)
 
 numcoagflow-npwalltot
 ```
+molconcAl=0.00526 mol/L
+numcoagflow=1.155*10^21 particles/hour
+npwalltot =4.71*10^20 particles/hour
+numcoagflow-npwalltot=6.84*10^20 particles/hour
