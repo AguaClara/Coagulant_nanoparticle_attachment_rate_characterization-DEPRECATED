@@ -153,9 +153,8 @@ The system was fully automated through Process Control and Data Acquisition (Pro
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/ProCoDa_setup.PNG?raw=true" >
-<div style = "text-align:center; font-weight:bold">
-Figure 5: ProCoDA setup
-</div>
+
+**Figure 5: ProCoDA setup**
 
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turbidity **[turbidity-AddressedAL]**. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
@@ -191,21 +190,18 @@ The position in the flocculator and headloss increase rate were plotted to ident
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
 
-<div style = "text-align:center; font-weight:bold">
-Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
-</div>
+**Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.**
 
 As shown in the graph, although the segments of the flocculator have equal length, the rate did not decrease linearly. The assumption was that the rate of headloss increase will linearly decrease as going through the flocculator, because there will be less particles to attach to the walls of the flocculator. However, this graph shows that the rate of headloss increase, actually decreases. The reason might be that there was an unknown relationship between headloss and position in the flocculator. This should be further investigated in the next semester.
 
-However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear. This linearity resulted from higher increase rate in the beginning of the flocculator and lower increase rate in the end of the flocculator as shown above. Therefore, when the total headloss is plotted over time, the relationship is linear when the rates are summed.
+Despite the non-linear change in rate of change of headloss, each section of the flocculator had a linear increase in headloss, just at varying rates. Thus, the overall increase in headloss throughout the flocculator was also linear as shown in figure 8 below. This rate of increase can be presumed to be the sum of the rates within each section. This should also be further investigated in future semesters.
 **[If this confirms your original assumption that rate of headloss increase will linearly decrease then you should state that explicitly, because the last figure seems to contradict that assumption! If I don't know what I'm talking about just ignore this haha.x _addressedYY]**
 
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
-<div style = "text-align:center; font-weight:bold">
-Figure 8: Total Headloss change in flocculator over time at 20 NTU.
-</div>
+
+**Figure 8: Total Headloss change in flocculator over time at 20 NTU.**
 
 All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository and as python codes in manual.
 
