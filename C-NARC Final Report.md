@@ -179,6 +179,7 @@ The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesi
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph_fin.png?raw=true">
+
 **Figure 6: Headloss change over time at 20 NTU, 2 Trials averaged.**
 
 The total number of particles on the wall throughout the entire flocculator was calculated to be $4.330 * 10^{20} \frac{particles}{hour}$. To explicitly compare, the number of particles in the initial inflow was calculated. In order to calculate that number, molecular formula of the coagulant was found to be $\left  [ Al_{10}\left ( OH \right )_ {21} Cl_{\left ( 3n-m \right )} \right ]_ {x}$ using the basicity value of 0.7, which is the basicity of coagulant used in Ithaca water plant and aguaclara lab. m and n could be varied, but in our calculation, n value of 10 was used. The concentration of Aluminum in stock is calculated from the concentration of aluminum in stock solution. From that, number of coagulant particles in inflow was calculated to be $1.155 * 10^{21} \frac{particles}{hour}$ based on tube flow.
