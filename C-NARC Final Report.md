@@ -191,6 +191,7 @@ The position in the flocculator and headloss increase rate were plotted to ident
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
+
 <div style = "text-align:center; font-weight:bold">
 Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
 </div>
