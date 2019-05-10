@@ -148,8 +148,14 @@ The coiled flocculator was made of tubing wound around a cardboard tube. This wa
 After each experimental trial, air bubbles were introduced into the system at 1 rpm by the air pump. Water was also continually pumped at 76 rpm by the water pump to carry the air bubble through the flocculator. This cleaning system was used to scrape and clean any coagulant buildup on the flocculator wall in preparation for the next trial. Any fluids that entered the microbore tubing during the experiment, while the air pump was off, was contained in the 1L bottle attached to the air pump.
 
 ### Procedure
-The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual. ![ProCoDa_setup](/ProCoDa_setup.png)
+The system was fully automated through Process Control and Data Acquisition (ProCoDA) to run at the target turbidity, 20 NTU. PID CONTROL turned on the clay pump and ran for 15 minutes to allow for the system to reach and maintain the target turbidity. The next state, EXPERIMENT, started the coagulant pump and ran for three hours. This was the state from which the team collected the data. After EXPERIMENT, CLEANING (AIR) ran for four minutes. This state stoped the coagulant and clay pump, and started the 1 RPM air pump to introduce air into the system. The last state was CLEANING (WATER), which ran for five minutes and turned off the air pump to allow the water to force the air bubbles through the system. For more details on the team's ProCoDA method file, refer to the manual.
+
+<img
+align = "center"
+src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/ProCoDa_setup.PNG?raw=true" >
+<div style = "text-align:center">
 **Figure 5: ProCoDA setup**
+</div>
 
 To run a experiment, the C-NARC ProCoDA method file was first opened and the blue influent valve was set to the open position. In manual operation, ProCoDA's state was changed to ON, which turned on the mixer and the water pump. The water pump was manually started at 76rpm and the red effluent valve was set to the open position after a brief delay to prevent back-flow of wastewater. Then, ProCoDA was switched from manual to automatic operation, after which the clay pump automatically turned on. Fifteen minutes later, before ProCoDA switched to the EXPERIMENT state, the pressure sensors were zeroed through ProCoDA. The experiment was left to run for three trials at the target turbidity **[turbidity-AddressedAL]**. Finally, the change in pressure and the accumulation of head loss in the flocculator were observed for each trial.
 
@@ -173,26 +179,33 @@ The calculated drag force was $-8.55*10^{-24}$ $\frac{kg*m}{s^2}$. The hypothesi
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Graph_fin.png?raw=true">
-**Figure 6: Headloss change over time at 20 NTU, 2 Trials averaged.**
+<div style = "text-align:center; font-weight:bold">
+Figure 6: Headloss change over time at 20 NTU, 2 Trials averaged.
+</div>
 
 The total number of particles on the wall throughout the entire flocculator was calculated to be $4.330 * 10^{20} \frac{particles}{hour}$. To explicitly compare, the number of particles in the initial inflow was calculated. In order to calculate that number, molecular formula of the coagulant was found to be $\left  [ Al_{10}\left ( OH \right )_ {21} Cl_{\left ( 3n-m \right )} \right ]_ {x}$ using the basicity value of 0.7, which is the basicity of coagulant used in Ithaca water plant and aguaclara lab. m and n could be varied, but in our calculation, n value of 10 was used. The concentration of Aluminum in stock is calculated from the concentration of aluminum in stock solution. From that, number of coagulant particles in inflow was calculated to be $1.155 * 10^{21} \frac{particles}{hour}$ based on tube flow.
  This also **[also_addressedYY]** lined up with the expectations that coagulant particles should not adhere to the wall, but should adhere to the clay particles in water. However, there was no clear distinction identified between particles in suspension and particles attached to the clay particles.
 
 The position in the flocculator and headloss increase rate were plotted to identify the relationship.
+
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Headloss_Rate_Graph.png?raw=true">
-**Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.**
+<div style = "text-align:center; font-weight:bold">
+Figure 7: Headloss increase rate throughout position change in flocculator at 20 NTU.
+</div>
 
-As shown in the graph, although the segments of the flocculator have equal length, the rate did not decrease linearly. The assumption was that the rate of headloss increase will linearly decrease as going through the flocculator, because there will be less particles to attach to the walls of the flocculator. The reason might be that there was an unknown relationship between headloss and position in the flocculator.
+As shown in the graph, although the segments of the flocculator have equal length, the rate did not decrease linearly. The assumption was that the rate of headloss increase will linearly decrease as going through the flocculator, because there will be less particles to attach to the walls of the flocculator. However, this graph shows that the rate of headloss increase, actually decreases. The reason might be that there was an unknown relationship between headloss and position in the flocculator. This should be further investigated in the next semester.
 
-However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear.
+However, when the total headloss change from the beginning of the flocculator to the end of the flocculator was plotted over time, it was shown that the relationship was still linear. This linearity resulted from higher increase rate in the beginning of the flocculator and lower increase rate in the end of the flocculator as shown above. Therefore, when the total headloss is plotted over time, the relationship is linear when the rates are summed.
 **[If this confirms your original assumption that rate of headloss increase will linearly decrease then you should state that explicitly, because the last figure seems to contradict that assumption! If I don't know what I'm talking about just ignore this haha.x _addressedYY]**
 
 <img
 align = "center"
 src= "https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Total_Headloss_Graph.png?raw=true">
-**Figure 8: Total Headloss change in flocculator over time at 20 NTU.**
+<div style = "text-align:center; font-weight:bold">
+Figure 8: Total Headloss change in flocculator over time at 20 NTU.
+</div>
 
 All calculations are compiled in [Calculation.md file](https://github.com/AguaClara/Coagulant_nanoparticle_attachment_rate_characterization/blob/master/Calculation.md) in the C-NARC team's repository and as python codes in manual.
 
